@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>board-life</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="gameList.js" type="module"></script>
+    <script src="search.js" type="module" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>보드게임 가이드</h1>
+      <button id="my-game-button">내 게임</button>
+    </header>
+    <main>
+      <section>
+        <div class="search-section">
+          <input
+            type="text"
+            id="gameSearch"
+            placeholder="보드게임 이름을 검색해주세요!"
+          />
+          <button id="searchBtn">검색</button>
+        </div>
+
+        <div class="filter-section">
+          <label>플레이어 수: </label>
+          <select id="playerFilter">
+            <option value="">전체</option>
+            <option value="2">2명</option>
+            <option value="3">3명</option>
+            <option value="4">4명</option>
+            <option value="5+">5명 이상</option>
+          </select>
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
+      </section>
+      <section>
+        <div class="game-controls">
+          <button id="reset">초기화</button>
+          <button id="replyNewGame">새 게임 추가 요청하기</button>
+        </div>
+        <div id="gameList"></div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; 2025 board-life. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
