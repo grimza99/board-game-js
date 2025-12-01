@@ -1,3 +1,5 @@
+import { filteredGames, handleSearchInputGame } from "./search.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   setupEventListeners();
 });
@@ -5,7 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function setupEventListeners() {
   const resetButton = document.getElementById("reset");
   if (resetButton) {
-    resetButton.addEventListener("click", renderGameList);
+    resetButton.addEventListener("click", () => {
+      console.log("리셋 버튼 클릭됨");
+    });
   }
 
   const replyNewGameBtn = document.getElementById("replyNewGame");
@@ -17,7 +21,7 @@ function setupEventListeners() {
   const searchBtn = document.getElementById("searchBtn");
   if (searchBtn) {
     searchBtn.addEventListener("click", () => {
-      console.log("검색 버튼 클릭됨");
+      handleSearchInputGame();
     });
   }
 
@@ -25,14 +29,20 @@ function setupEventListeners() {
   if (searchInput) {
     searchInput.addEventListener("keypress", function (e) {
       if (e.key === "Enter") {
-        console.log("검색어 입력 후 Enter 키 눌림");
+        handleSearchInputGame();
       }
     });
   }
-  const playerFilter = document.getElementById("playerFilter");
+  const playerFilter = document.getElementById("player-filter");
   if (playerFilter) {
     playerFilter.addEventListener("change", () => {
-      console.log("플레이어 수 필터 변경됨");
+      filteredGames();
+    });
+  }
+  const difficultyFilter = document.getElementById("difficulty-filter");
+  if (difficultyFilter) {
+    difficultyFilter.addEventListener("change", () => {
+      filteredGames();
     });
   }
 }

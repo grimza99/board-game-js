@@ -4,45 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>board-life</title>
+
+    <!-- 스타일시트 -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gameList.css" />
+    <!-- 게임리스트,카드스타일 -->
+
+    <!-- 스크립트 -->
     <script src="gameList.js" type="module"></script>
+    <script src="game-list-control.js" type="module"></script>
     <script src="search.js" type="module" defer></script>
   </head>
   <body>
     <header id="header">
       <h1>보드게임 가이드</h1>
-      <button id="my-game-button">내 게임</button>
+      <!-- <button id="my-game-button">내 게임</button> -->
     </header>
     <main>
+      <!-- 검색, 필터 섹션 -->
       <section>
         <div class="search-section">
-          <input
-            type="text"
-            id="gameSearch"
-            placeholder="보드게임 이름을 검색해주세요!"
-          />
-          <button id="searchBtn">검색</button>
+          <div>
+            <input
+              type="text"
+              id="gameSearch"
+              placeholder="보드게임 이름을 검색해주세요!"
+            />
+            <button id="searchBtn">검색</button>
+          </div>
+          <ul id="search-results"></ul>
         </div>
-
-        <div class="filter-section">
-          <label>플레이어 수: </label>
-          <select id="playerFilter">
-            <option value="">전체</option>
-            <option value="2">2명</option>
-            <option value="3">3명</option>
-            <option value="4">4명</option>
-            <option value="5+">5명 이상</option>
-          </select>
+        <div id="filter-section">
+          <div id="player-filter">
+            <label>플레이어 수: </label>
+            <select id="player-filter-options">
+              <option value="all">전체</option>
+              <option value="2">2명</option>
+              <option value="3">3명</option>
+              <option value="4">4명</option>
+              <option value="5+">5명 이상</option>
+            </select>
+          </div>
+          <div id="difficulty-filter">
+            <label>난이도: </label>
+            <select id="difficulty-filter-options">
+              <option value="all">전체</option>
+              <option value="hard">어려움</option>
+              <option value="normal">중간</option>
+              <option value="easy">쉬움</option>
+            </select>
+          </div>
         </div>
-
-        <div id="searchResults" class="search-results"></div>
       </section>
+      <!-- 게임초기화, 새게임추가버튼 섹션 -->
       <section>
-        <div class="game-controls">
+        <div class="game-list-controls">
           <button id="reset">초기화</button>
           <button id="replyNewGame">새 게임 추가 요청하기</button>
         </div>
-        <div id="gameList"></div>
+      </section>
+      <!-- 게임 리스트 섹션 -->
+      <section>
+        <div id="game-list"></div>
       </section>
     </main>
     <footer id="footer">

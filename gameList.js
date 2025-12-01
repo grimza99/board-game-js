@@ -1,20 +1,20 @@
 import GAME_LIST from "./gameListItem.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  renderGameList();
+  renderGameList(GAME_LIST); //초기 렌더링
 });
 
-function renderGameList() {
-  const gameListElement = document.getElementById("gameList");
+export function renderGameList(gameList) {
+  const gameListElement = document.getElementById("game-list");
   if (!gameListElement) return;
   gameListElement.innerHTML = "";
-  GAME_LIST.forEach((game) => {
+  gameList.forEach((game) => {
     const gameCard = createGameCard(game);
     gameListElement.appendChild(gameCard);
   });
 }
 
-function createGameCard(game) {
+export function createGameCard(game) {
   const card = document.createElement("button");
   card.className = "game-card";
   card.innerHTML = `
