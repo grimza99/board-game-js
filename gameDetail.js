@@ -45,7 +45,12 @@ export function showGameDetail(gameId) {
       </div>
       <div id="game-video-section">
         <h4 class='detail-game-subtitle'>게임 룰 영상</h4>
-        <div id="game-video">${video}</div>
+        <iframe 
+          id="detail-game-video"
+          src="https://www.youtube.com/embed/${video}" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
       </div>
     </section>
   `;

@@ -34,7 +34,7 @@ body {
 
 main {
   padding: 20px;
-  height: calc(100vh);
+  min-height: calc(100vh - 70px - 60px); /* header와 footer 높이 제외 */
 }
 
 #my-game-button {

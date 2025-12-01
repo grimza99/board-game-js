@@ -5,7 +5,7 @@ const GAME_LIST = [
     players: "3-4",
     playtime: 60,
     difficulty: "중간",
-    image: "images/catan.jpg",
+    image: "public/game-image/main/1-catan.jpeg",
     description: "자원을 모아 섬을 개척하는 전략 게임입니다.",
   },
   {
