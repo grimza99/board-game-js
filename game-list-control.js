@@ -5,13 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function setupEventListeners() {
-  const resetButton = document.getElementById("reset");
-  if (resetButton) {
-    resetButton.addEventListener("click", () => {
-      console.log("리셋 버튼 클릭됨");
-    });
-  }
-
   const replyNewGameBtn = document.getElementById("replyNewGame");
   if (replyNewGameBtn) {
     replyNewGameBtn.addEventListener("click", () => {
