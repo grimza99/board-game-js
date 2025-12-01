@@ -1,3 +1,4 @@
+import showReplyGameForm from "./reply-game.js";
 import { filteredGames, handleSearchInputGame } from "./search.js";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -5,12 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function setupEventListeners() {
-  const replyNewGameBtn = document.getElementById("replyNewGame");
+  const replyNewGameBtn = document.getElementById("reply-new-game-button");
   if (replyNewGameBtn) {
     replyNewGameBtn.addEventListener("click", () => {
-      console.log("새 게임 추가 요청하기 클릭됨");
+      showReplyGameForm();
     });
   }
+
   const searchBtn = document.getElementById("searchBtn");
   if (searchBtn) {
     searchBtn.addEventListener("click", () => {

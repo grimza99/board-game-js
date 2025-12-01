@@ -3,7 +3,6 @@ import GAME_LIST from "./gameListItem.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   renderGameList(GAME_LIST); //초기 렌더링
-  console.log(GAME_LIST);
 });
 
 export function renderGameList(gameList) {

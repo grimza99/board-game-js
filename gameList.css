@@ -1,3 +1,15 @@
+#reply-new-game-button {
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+#reply-new-game-button img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
 #gameList {
   display: flex;
   flex-direction: column;
