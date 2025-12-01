@@ -1,7 +1,9 @@
+import { showGameDetail } from "./gameDetail.js";
 import GAME_LIST from "./gameListItem.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   renderGameList(GAME_LIST); //초기 렌더링
+  console.log(GAME_LIST);
 });
 
 export function renderGameList(gameList) {
@@ -31,7 +33,9 @@ export function createGameCard(game) {
     <img src="${game.image}" alt="${game.name}" class="game-image"/>
   `;
   card.addEventListener("click", () => {
-    console.log(`${game.name} 카드 클릭됨`);
+    const relativePath = `./game-rule?${game.id}`;
+    window.history.pushState({ gameId: game.id }, game.name, relativePath);
+    showGameDetail(game.id);
   });
   return card;
 }
