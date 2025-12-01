@@ -1,0 +1,69 @@
+#detail-game-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* 게임 이미지-타이틀 스타일 */
+#detail-game-image-title {
+  border-radius: 16px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-color: #00000090;
+}
+#detail-game-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  opacity: 0.6;
+}
+
+#detail-game-title {
+  color: white;
+  font-size: 60px;
+  z-index: 100;
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 20px;
+}
+
+/* 서브타이틀 (게임설명, 게임 규칙, 게임 룰 영상) */
+.detail-game-subtitle {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+/* info 그룹 */
+.detail-game-info-card {
+  border-radius: 16px;
+  border: 2px solid #ddd;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 20px;
+}
+.info-card-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.info-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info-text-group :first-child {
+  color: gray;
+}
