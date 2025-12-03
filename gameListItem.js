@@ -87,6 +87,16 @@ const GAME_LIST = [
     description:
       "주사위를 굴려 카지노에 배치하고, 가장 많은 돈을 벌어 승리하는 게임입니다.",
   },
+  {
+    id: 10,
+    name: "코드네임 (Codenames)",
+    players: "4-8",
+    playtime: "20",
+    difficulty: "중간",
+    image: "public/game-image/main/10-Codenames.jpeg",
+    description:
+      "스파이 마스터가 내는 단어 힌트를 통해, 팀원들이 우리 팀 단어를 찾는 팀 대결 단어 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;

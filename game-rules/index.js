@@ -1,4 +1,5 @@
 import { CATAN } from "./1-catan.js";
+import { CODE_NAMES } from "./10-Codenames.js";
 import { TICKET_TO_RIDE } from "./2-ticket-to-ride.js";
 import { RUMMIKUB } from "./3-rummikub.js";
 import { HALLI_GALLI } from "./4-halli-galli.js";
@@ -19,3 +20,4 @@ GAME_DETAIL_MAP.set(6, AZUL); //아줄
 GAME_DETAIL_MAP.set(7, SKULL); //스컬
 GAME_DETAIL_MAP.set(8, PANDEMIC); //팬데믹
 GAME_DETAIL_MAP.set(9, LAS_VEGAS); //라스베가스(Las Vegas)
+GAME_DETAIL_MAP.set(10, CODE_NAMES); //코드네임(Codenames)
