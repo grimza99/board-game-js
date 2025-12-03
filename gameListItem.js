@@ -157,6 +157,16 @@ const GAME_LIST = [
     description:
       "도미노 형태의 타일을 draft하여 자기 왕국을 채우며 점수를 쌓는 가벼운 전략 게임입니다.",
   },
+  {
+    id: 17,
+    name: "위너스 서클 (Winner's Circle)",
+    players: "2-6",
+    playtime: "30-45",
+    difficulty: "중간",
+    image: "public/game-image/main/17-winners-circle.jpeg",
+    description:
+      "말 7마리의 능력치를 바탕으로 배팅하고, 경주 결과에 따라 점수를 획득하는 심리·예측 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
