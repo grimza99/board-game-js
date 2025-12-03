@@ -6,6 +6,9 @@
   border-radius: 4px;
   font-size: 16px;
 }
+#game_search_input::placeholder {
+  color: var(--primary);
+}
 #search_button {
   padding: 8px 16px;
   margin-left: 8px;
