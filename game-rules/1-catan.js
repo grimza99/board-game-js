@@ -87,7 +87,6 @@ export const CATAN = {
         </ul>
       </div>
   </div>
-</article>
 
   `,
   video: "37V2ajpMEic?si=anORnH6m_rAPVfVd",
