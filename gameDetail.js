@@ -9,7 +9,7 @@ export function showGameDetail(gameId) {
   main.innerHTML = `
     <section id="detail-game-section">
       <div id="detail-game-image-title">
-        <h3 id="detail-game-title">${title}</h3>
+        <h2 id="detail-game-title">${title}</h2>
         <img id="detail-game-image" src="${image}" alt="${title}"/>
       </div>
       <div class="detail-game-info-card">
@@ -36,15 +36,17 @@ export function showGameDetail(gameId) {
         </div>
       </div>
       <div>
-        <h4 class='detail-game-subtitle'>게임 설명</h4>
+        <h3 class='detail-game-subtitle'>게임 설명</h3>
         <p id="detail-description">${info.description}</p>
       </div>
+      <hr class='hr'></hr>
       <div id="game-rule-section">
-        <h4 class='detail-game-subtitle'>게임 규칙</h4>
-        <div id="game-rule">${rule}</div>
+        <h3 class='detail-game-subtitle'>게임 규칙</h3>
+        <article id="game-rule">${rule}</article>
       </div>
+      <hr class='hr'></hr>
       <div id="game-video-section">
-        <h4 class='detail-game-subtitle'>게임 룰 영상</h4>
+        <h3 class='detail-game-subtitle'>게임 룰 영상</h3>
         <iframe 
           id="detail-game-video"
           src="https://www.youtube.com/embed/${video}" 
