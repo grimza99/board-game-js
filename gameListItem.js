@@ -127,6 +127,16 @@ const GAME_LIST = [
     description:
       "빠른 관찰력과 반사 신경이 요구되는 카드 게임으로, 카드들 사이에서 공통된 심볼을 찾아내는 게임입니다.",
   },
+  {
+    id: 14,
+    name: "딕싯 (Dixit)",
+    players: "3-6",
+    playtime: "30",
+    difficulty: "쉬움",
+    image: "public/game-image/main/14-Dixit.jpeg",
+    description:
+      "상상력과 창의력을 발휘하여 아름다운 일러스트 카드로 이야기를 만들어가는 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;

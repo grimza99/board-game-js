@@ -3,6 +3,7 @@ import { CODE_NAMES } from "./10-Codenames.js";
 import { BOHNANAZA } from "./11-Bohnanza.js";
 import { LOVE_LETTER } from "./12-Love.Letter.js";
 import { DOBBLE } from "./13-Dobble.js";
+import { DIXIT } from "./14-Dixit.js";
 import { TICKET_TO_RIDE } from "./2-ticket-to-ride.js";
 import { RUMMIKUB } from "./3-rummikub.js";
 import { HALLI_GALLI } from "./4-halli-galli.js";
@@ -27,3 +28,4 @@ GAME_DETAIL_MAP.set(10, CODE_NAMES); //코드네임(Codenames)
 GAME_DETAIL_MAP.set(11, BOHNANAZA); //보난자(Bohnanza)
 GAME_DETAIL_MAP.set(12, LOVE_LETTER); //러브레터(Love Letter)
 GAME_DETAIL_MAP.set(13, DOBBLE); //도블
+GAME_DETAIL_MAP.set(14, DIXIT); //
