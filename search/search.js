@@ -1,5 +1,6 @@
-import { renderGameList } from "./gameList.js";
-import GAME_LIST from "./gameListItem.js";
+import { showGameDetail } from "../gameDetail.js";
+import { renderGameList } from "../gameList.js";
+import GAME_LIST from "../gameListItem.js";
 
 const DIFFICULTY_MAP = {
   hard: "어려움",
@@ -12,34 +13,43 @@ const DIFFICULTY_MAP = {
 function createSearchResultItem(game) {
   const li = document.createElement("li");
   li.className = "search-result-item";
-  li.textContent = `${game.name}`;
+  li.innerHTML = `
+  <span>${game.name}</span>
+  <img src="${game.image}" alt="${game.name}" class="game-image"/>
+  `;
+  //클릭시 상세 페이지로 이동
+  li.addEventListener("click", () => {
+    showGameDetail(game.id, game.name);
+  });
   return li;
 }
 
 /**인풋 검색 연산 */
 export function handleSearchInputGame() {
   const searchInput = document.getElementById("gameSearch");
-  const searchResults = document.getElementById("search-results");
+  const searchResults = document.getElementById("search_results");
 
   if (!searchInput || !searchResults) return;
 
   const searchTerm = searchInput.value.trim().toLowerCase();
 
-  searchResults.innerHTML = "";
-
+  searchResults.innerHTML = "<ul id='search_results_ul'></ul>";
+  const searchResultsUl = document.getElementById("search_results_ul");
   if (!searchTerm) {
-    searchResults.innerHTML = "<p>검색어를 입력하세요.</p>";
+    searchResultsUl.innerHTML = "<p>검색어를 입력하세요.</p>";
     return;
   }
-  const foundGame = GAME_LIST.find((game) =>
+  const foundGames = GAME_LIST.filter((game) =>
     game.name.toLowerCase().includes(searchTerm)
   );
 
-  if (foundGame) {
-    const gameItem = createSearchResultItem(foundGame);
-    searchResults.appendChild(gameItem);
+  if (foundGames.length > 0) {
+    foundGames.forEach((game) => {
+      const gameItem = createSearchResultItem(game);
+      searchResultsUl.appendChild(gameItem);
+    });
   } else {
-    searchResults.innerHTML = "<li>해당 게임이 없습니다.</li>";
+    searchResultsUl.innerHTML = "<p>해당 게임이 없습니다.</p>";
   }
 }
 

@@ -1,0 +1,39 @@
+/*검색 결과 아이템 ul*/
+#search_results_ul {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* 검색 결과 아이템 li태그 */
+.search-result-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
+}
+/* 마지막 검색 결과 아이템은 border-bottom 제거 */
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.search-result-item :hover {
+  color: var(--primary);
+}
+
+/* 검색 결과가 없을 때 메시지 */
+#search_results_ul p {
+  padding: 10px;
+  color: #666;
+}

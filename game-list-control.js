@@ -1,5 +1,5 @@
 import showReplyGameForm from "./reply-game.js";
-import { filteredGames, handleSearchInputGame } from "./search.js";
+import { filteredGames, handleSearchInputGame } from "./search/search.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   setupEventListeners();
