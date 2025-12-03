@@ -57,6 +57,16 @@ const GAME_LIST = [
     description:
       "공장에서 타일을 가져와 자신의 벽을 채우며 패턴과 콤보로 점수를 얻는 추상 전략 게임입니다.",
   },
+  {
+    id: 7,
+    name: "스컬 (skull)",
+    players: "3-6",
+    playtime: "30",
+    difficulty: "쉬움",
+    image: "public/game-image/main/7-skull.jpeg",
+    description:
+      "꽃과 해골을 섞어 내고, 도전으로 상대의 블러핑을 꿰뚫는 심리전 게임",
+  },
 ];
 
 export default GAME_LIST;
