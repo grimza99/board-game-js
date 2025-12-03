@@ -207,6 +207,16 @@ const GAME_LIST = [
     description:
       "두 팀이 서로의 암호 단어를 유추하고 가짜 신호를 섞어 속이는 고급 단어 추리 게임입니다.",
   },
+  {
+    id: 22,
+    name: "센추리: 향신료의 길 (Century: Spice Road)",
+    players: "2-5",
+    playtime: "40",
+    difficulty: "중간",
+    image: "public/game-image/main/22-Century-Spice-Road.jpeg",
+    description:
+      "향신료 큐브를 거래·업그레이드·교환하며 물건 카드를 구매하는 엔진 빌딩 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
