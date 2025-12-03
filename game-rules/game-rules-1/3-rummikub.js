@@ -1,4 +1,4 @@
-import GAME_LIST from "../game-list/game-list-Item.js";
+import GAME_LIST from "../../game-list/game-list-Item.js";
 
 export const RUMMIKUB = {
   title: "루미큐브(Rummikub)",

@@ -1,4 +1,4 @@
-import GAME_LIST from "../game-list/game-list-Item.js";
+import GAME_LIST from "../../game-list/game-list-Item.js";
 
 export const HALLI_GALLI = {
   title: "할리갈리 (Halli Galli)",

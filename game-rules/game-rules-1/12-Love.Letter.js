@@ -1,4 +1,4 @@
-import GAME_LIST from "../game-list/game-list-Item.js";
+import GAME_LIST from "../../game-list/game-list-Item.js";
 
 export const LOVE_LETTER = {
   title: "러브레터 (Love Letter)",

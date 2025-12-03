@@ -137,6 +137,106 @@ const GAME_LIST = [
     description:
       "상상력과 창의력을 발휘하여 아름다운 일러스트 카드로 이야기를 만들어가는 게임입니다.",
   },
+  {
+    id: 15,
+    name: "테라포밍 마스 (Terraforming Mars)",
+    players: "1-5",
+    playtime: "120",
+    difficulty: "어려움",
+    image: "public/game-image/main/15-Terraforming-Mars.jpeg",
+    description:
+      "화성을 개척하고 환경을 변화시켜 인간이 살 수 있는 행성으로 만드는 전략 게임입니다.",
+  },
+  {
+    id: 16,
+    name: "킹도미노 (Kingdomino)",
+    players: "2-4",
+    playtime: "15-20",
+    difficulty: "쉬움",
+    image: "public/game-image/main/16-Kingdomino.jpeg",
+    description:
+      "도미노 형태의 타일을 draft하여 자기 왕국을 채우며 점수를 쌓는 가벼운 전략 게임입니다.",
+  },
+  {
+    id: 17,
+    name: "위너스 서클 (Winner's Circle)",
+    players: "2-6",
+    playtime: "30-45",
+    difficulty: "중간",
+    image: "public/game-image/main/17-winners-circle.jpeg",
+    description:
+      "말 7마리의 능력치를 바탕으로 배팅하고, 경주 결과에 따라 점수를 획득하는 심리·예측 게임입니다.",
+  },
+  {
+    id: 18,
+    name: "도미니언 (Dominion)",
+    players: "2-4",
+    playtime: "30",
+    difficulty: "중간",
+    image: "public/game-image/main/18-dominion.jpeg",
+    description:
+      "덱 빌딩 카드 게임의 원조로, 다양한 카드를 조합해 자신의 덱을 강화하고 승점을 획득하는 전략 게임입니다.",
+  },
+  {
+    id: 19,
+    name: "사이쓰 (Scythe)",
+    players: "1-5",
+    playtime: "120",
+    difficulty: "어려움",
+    image: "public/game-image/main/19-Scythe.jpeg",
+    description:
+      "매우 어려운 게임으로, 대체 역사 배경의 전략 게임입니다. 자원 관리, 영역 확장, 전투 등을 통해 자신의 세력을 키워나가는 게임입니다.",
+  },
+  {
+    id: 20,
+    name: "퀵스 (Qwixx)",
+    players: "2-5",
+    playtime: "15",
+    difficulty: "쉬움",
+    image: "public/game-image/main/20-Qwixx.jpeg",
+    description:
+      "주사위를 굴려 숫자 칸을 채우며 점수를 얻는 간단하고 빠른 주사위 게임입니다.",
+  },
+  {
+    id: 21,
+    name: "디크립토 (Decrypto)",
+    players: "4-8",
+    playtime: "45",
+    difficulty: "어려움",
+    image: "public/game-image/main/21-decrypto.jpeg",
+    description:
+      "두 팀이 서로의 암호 단어를 유추하고 가짜 신호를 섞어 속이는 고급 단어 추리 게임입니다.",
+  },
+  {
+    id: 22,
+    name: "센추리: 향신료의 길 (Century: Spice Road)",
+    players: "2-5",
+    playtime: "40",
+    difficulty: "중간",
+    image: "public/game-image/main/22-Century-Spice-Road.jpeg",
+    description:
+      "향신료 큐브를 거래·업그레이드·교환하며 물건 카드를 구매하는 엔진 빌딩 게임입니다.",
+  },
+  {
+    id: 23,
+    name: "레지스탕스 아발론 (The Resistance Avalon)",
+    players: "5-10",
+    playtime: "30",
+    difficulty: "중간",
+    image: "public/game-image/main/23-Resistance-Avalon.jpeg",
+    description:
+      "선과 악으로 나뉘어 임무를 수행하는 정체 은폐 심리게임. 마피아의 전략 버전 게임입니다.",
+  },
+  {
+    id: 24,
+    name: "스플렌더 듀얼 (Splendor Duel)",
+    players: "2",
+    playtime: "30",
+    difficulty: "중간",
+    image: "public/game-image/main/24-Splendor-Duel.jpeg",
+    description:
+      "스플렌더의 2인 전용 버전으로, 보석을 수집하고 카드를 구매하여 최고의 상인이 되는 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
