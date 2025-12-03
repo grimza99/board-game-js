@@ -67,6 +67,16 @@ const GAME_LIST = [
     description:
       "꽃과 해골을 섞어 내고, 도전으로 상대의 블러핑을 꿰뚫는 심리전 게임",
   },
+  {
+    id: 8,
+    name: "팬데믹 (Pandemic)",
+    players: "2-4",
+    playtime: "50",
+    difficulty: "어려움",
+    image: "public/game-image/main/8-pandemic.jpeg",
+    description:
+      "전 세계에 퍼진 질병을 치료하고 인류를 구하는 협력 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
