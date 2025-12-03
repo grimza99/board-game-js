@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
 export const CENTURY_SPICE_ROAD = {
   title: "센추리:향신료의 길 (Century: Spice Road)",

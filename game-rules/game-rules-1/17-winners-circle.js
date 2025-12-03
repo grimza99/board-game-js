@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
 export const WINNERS_CIRCLE = {
   title: "위너스 서클 (winner's circle)",

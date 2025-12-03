@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
 export const LAS_VEGAS = {
   title: "라스베가스 (Las Vegas)",

@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
 export const DECRYPTO = {
   title: "디크립토 (Decrypto)",

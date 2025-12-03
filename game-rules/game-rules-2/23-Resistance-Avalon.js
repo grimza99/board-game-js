@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
 export const RESISTANCE_AVALON = {
   title: "레지스탕스 아발론 (The Resistance Avalon)",

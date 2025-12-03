@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
 export const TERRAFORMING_MARS = {
   title: "테라포밍 마스 (Terraforming Mars)",

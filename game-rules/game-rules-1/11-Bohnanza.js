@@ -1,6 +1,6 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
-export const BOHNANAZA = {
+export const BOHNANZA = {
   title: "보난자 (Bohnanza)",
   image: "public/game-image/detail/11-Bohnanza.jpeg",
   info: GAME_LIST[10],

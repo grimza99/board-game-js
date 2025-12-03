@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../../gameListItem.js";
 
 export const CODE_NAMES = {
   title: "코드네임 (Codenames)",
