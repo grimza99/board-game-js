@@ -18,6 +18,7 @@ import { DOMINION } from "./18-dominion.js";
 import { WINNERS_CIRCLE } from "./17-winners-circle.js";
 import { SCYTHE } from "./19-Scythe.js";
 import { QWIXX } from "./20-Qwixx.js";
+import { DECRYPTO } from "./21-decrypto.js";
 
 export const GAME_DETAIL_MAP = new Map();
 
@@ -41,3 +42,4 @@ GAME_DETAIL_MAP.set(17, WINNERS_CIRCLE); //위너스 서클(Winner's Circle)
 GAME_DETAIL_MAP.set(18, DOMINION); //도미니언(Dominion)
 GAME_DETAIL_MAP.set(19, SCYTHE); //사이쓰(Scythe)
 GAME_DETAIL_MAP.set(20, QWIXX); //퀵스(Qwixx)
+GAME_DETAIL_MAP.set(21, DECRYPTO); //디크립토(Decrypto)

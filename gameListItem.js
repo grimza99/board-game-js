@@ -197,6 +197,16 @@ const GAME_LIST = [
     description:
       "주사위를 굴려 숫자 칸을 채우며 점수를 얻는 간단하고 빠른 주사위 게임입니다.",
   },
+  {
+    id: 21,
+    name: "디크립토 (Decrypto)",
+    players: "4-8",
+    playtime: "45",
+    difficulty: "어려움",
+    image: "public/game-image/main/21-decrypto.jpeg",
+    description:
+      "두 팀이 서로의 암호 단어를 유추하고 가짜 신호를 섞어 속이는 고급 단어 추리 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
