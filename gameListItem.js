@@ -47,6 +47,16 @@ const GAME_LIST = [
     description:
       "르네상스 시대의 보석 상인이 되어 보석을 수집하고, 건물을 건설하여 최고의 상인이 되는 전략 게임입니다.",
   },
+  {
+    id: 6,
+    name: "아줄 (Azul)",
+    players: "2-4",
+    playtime: "40",
+    difficulty: "쉬움",
+    image: "public/game-image/main/6-Azul.jpeg",
+    description:
+      "공장에서 타일을 가져와 자신의 벽을 채우며 패턴과 콤보로 점수를 얻는 추상 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
