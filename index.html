@@ -12,7 +12,7 @@
     <!-- 게임 디테일 html 스타일시트 -->
     <link rel="stylesheet" href="game-detail.css" />
     <!-- 게임추가요청 스타일시트 -->
-    <link rel="stylesheet" href="reply-game.css" />
+    <link rel="stylesheet" href="./request-game/request-game.css" />
     <link rel="stylesheet" href="./search/search.css" />
 
     <!-- 스크립트 -->
@@ -40,6 +40,16 @@
           </div>
           <div id="search_results"></div>
         </div>
+      </section>
+      <section id="filter_and_request_section">
+        <button id="request_game_button">
+          <img
+            id="request-game-icon"
+            src="/public/icons/send.icon.svg"
+            alt="새 게임 요청 아이콘"
+          />
+          <span>게임 추가 요청 하기</span>
+        </button>
         <div id="filter_section">
           <div class="filter" id="player-filter">
             <label>플레이어 수</label>
@@ -62,22 +72,12 @@
           </div>
         </div>
       </section>
-      <!--  새게임추가버튼 섹션 -->
-      <section>
-        <button id="reply-new-game-button">
-          <img
-            id="reply-new-game-icon"
-            src="/public/icons/send.icon.svg"
-            alt="새 게임 요청 아이콘"
-          />
-          <span>게임 추가</span>
-        </button>
-      </section>
+
       <!-- 게임 리스트 섹션 -->
       <section>
         <div id="game-list"></div>
       </section>
-      <div id="reply-game-form-modal"></div>
+      <div id="request_game_form_modal"></div>
     </main>
     <footer id="footer">
       <p>&copy; 2025 board-life. All rights reserved.</p>

@@ -64,7 +64,6 @@
 /* 필터 스타일링 */
 #filter_section {
   color: var(--primary);
-  margin-top: 20px;
   display: flex;
   justify-content: end;
   gap: 20px;
@@ -87,4 +86,13 @@
 
 .filter-select :focus {
   border: none;
+}
+
+/* -------------------------------------------- */
+/*모바일*/
+@media (max-width: 375px) {
+  .filter {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
