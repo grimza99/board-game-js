@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../game-list/game-list-Item.js";
 
 export const BOHNANAZA = {
   title: "보난자 (Bohnanza)",

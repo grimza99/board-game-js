@@ -1,6 +1,6 @@
 import { showGameDetail } from "../gameDetail.js";
-import { renderGameList } from "../gameList.js";
-import GAME_LIST from "../gameListItem.js";
+import { renderGameList } from "../game-list/game-list.js";
+import GAME_LIST from "../game-list/game-list-Item.js";
 
 const DIFFICULTY_MAP = {
   hard: "어려움",

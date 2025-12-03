@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../game-list/game-list-Item.js";
 
 export const DOBBLE = {
   title: "도블 (Dobble /Spot it!)",

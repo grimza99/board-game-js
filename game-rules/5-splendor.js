@@ -1,4 +1,4 @@
-import GAME_LIST from "../gameListItem.js";
+import GAME_LIST from "../game-list/game-list-Item.js";
 
 export const SPLENDOR = {
   title: "스플렌더 (Splendor)",

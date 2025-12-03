@@ -1,9 +1,4 @@
-import { showGameDetail } from "./gameDetail.js";
-import GAME_LIST from "./gameListItem.js";
-
-document.addEventListener("DOMContentLoaded", function () {
-  renderGameList(GAME_LIST); //초기 렌더링
-});
+import { showGameDetail } from "../gameDetail.js";
 
 export function renderGameList(gameList) {
   const gameListElement = document.getElementById("game-list");
