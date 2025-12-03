@@ -187,6 +187,16 @@ const GAME_LIST = [
     description:
       "매우 어려운 게임으로, 대체 역사 배경의 전략 게임입니다. 자원 관리, 영역 확장, 전투 등을 통해 자신의 세력을 키워나가는 게임입니다.",
   },
+  {
+    id: 20,
+    name: "퀵스 (Qwixx)",
+    players: "2-5",
+    playtime: "15",
+    difficulty: "쉬움",
+    image: "public/game-image/main/20-Qwixx.jpeg",
+    description:
+      "주사위를 굴려 숫자 칸을 채우며 점수를 얻는 간단하고 빠른 주사위 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
