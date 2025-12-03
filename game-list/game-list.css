@@ -1,11 +1,11 @@
-#gameList {
+#game_list {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin: 10px 0px;
 }
 
-.game-card {
+.game_card {
   background-color: white;
   cursor: pointer;
   display: flex;
@@ -15,16 +15,62 @@
   border-radius: 8px;
   padding: 16px;
   width: 100%;
+  gap: 12px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
-.game-card:hover {
+.game_card:hover {
   width: 100%;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.game-image {
+.game_card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+}
+.game_image {
   width: 80px;
   height: 80px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.game_name {
+  font-size: 18px;
+}
+.description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0px;
+  text-align: left;
+}
+
+/* --------------------------------------- */
+/**테블릿*/
+@media (min-width: 768px) {
+  #game_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .game_image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+/* 대형 데스크탑 */
+@media (min-width: 1440px) {
+  #game_list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .game_image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
