@@ -147,6 +147,16 @@ const GAME_LIST = [
     description:
       "화성을 개척하고 환경을 변화시켜 인간이 살 수 있는 행성으로 만드는 전략 게임입니다.",
   },
+  {
+    id: 16,
+    name: "킹도미노 (Kingdomino)",
+    players: "2-4",
+    playtime: "15-20",
+    difficulty: "쉬움",
+    image: "public/game-image/main/16-Kingdomino.jpeg",
+    description:
+      "도미노 형태의 타일을 draft하여 자기 왕국을 채우며 점수를 쌓는 가벼운 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
