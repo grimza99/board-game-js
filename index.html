@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="game-detail.css" />
     <!-- 게임추가요청 스타일시트 -->
     <link rel="stylesheet" href="reply-game.css" />
+    <link rel="stylesheet" href="./search/search.css" />
 
     <!-- 스크립트 -->
     <script src="gameList.js" type="module"></script>
@@ -32,17 +33,17 @@
           <div>
             <input
               type="text"
-              id="gameSearch"
+              id="game_search_input"
               placeholder="보드게임 이름을 검색해주세요!"
             />
-            <button id="searchBtn">검색</button>
+            <button id="search_button">검색</button>
           </div>
-          <ul id="search-results"></ul>
+          <div id="search_results"></div>
         </div>
-        <div id="filter-section">
-          <div id="player-filter">
-            <label>플레이어 수: </label>
-            <select id="player-filter-options">
+        <div id="filter_section">
+          <div class="filter" id="player-filter">
+            <label>플레이어 수</label>
+            <select class="filter-select" id="player-filter-options">
               <option value="all">전체</option>
               <option value="2">2명</option>
               <option value="3">3명</option>
@@ -50,9 +51,9 @@
               <option value="5+">5명 이상</option>
             </select>
           </div>
-          <div id="difficulty-filter">
-            <label>난이도: </label>
-            <select id="difficulty-filter-options">
+          <div class="filter" id="difficulty-filter">
+            <label>난이도</label>
+            <select class="filter-select" id="difficulty-filter-options">
               <option value="all">전체</option>
               <option value="hard">어려움</option>
               <option value="normal">중간</option>

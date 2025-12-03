@@ -1,6 +1,8 @@
 import { GAME_DETAIL_MAP } from "./game-rules/index.js";
 
-export function showGameDetail(gameId) {
+export function showGameDetail(gameId, gameName) {
+  const relativePath = `./game-rule?${gameId}`;
+  window.history.pushState({ gameId: gameId }, gameName, relativePath);
   const main = document.getElementById("main-content");
   if (!main) return;
 

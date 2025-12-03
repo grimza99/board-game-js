@@ -1,5 +1,5 @@
 import showReplyGameForm from "./reply-game.js";
-import { filteredGames, handleSearchInputGame } from "./search.js";
+import { filteredGames, handleSearchInputGame } from "./search/search.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   setupEventListeners();
@@ -13,14 +13,14 @@ function setupEventListeners() {
     });
   }
 
-  const searchBtn = document.getElementById("searchBtn");
+  const searchBtn = document.getElementById("search_button");
   if (searchBtn) {
     searchBtn.addEventListener("click", () => {
       handleSearchInputGame();
     });
   }
 
-  const searchInput = document.getElementById("gameSearch");
+  const searchInput = document.getElementById("game_search_input");
   if (searchInput) {
     searchInput.addEventListener("keypress", function (e) {
       if (e.key === "Enter") {

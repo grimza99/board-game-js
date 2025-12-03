@@ -32,9 +32,7 @@ export function createGameCard(game) {
     <img src="${game.image}" alt="${game.name}" class="game-image"/>
   `;
   card.addEventListener("click", () => {
-    const relativePath = `./game-rule?${game.id}`;
-    window.history.pushState({ gameId: game.id }, game.name, relativePath);
-    showGameDetail(game.id);
+    showGameDetail(game.id, game.name);
   });
   return card;
 }

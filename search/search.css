@@ -1,0 +1,90 @@
+/* 검색 인풋 스타일링 */
+#game_search_input {
+  width: 70%;
+  padding: 8px 12px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-size: 16px;
+}
+#game_search_input::placeholder {
+  color: var(--primary);
+}
+#search_button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 4px;
+}
+
+/*검색 결과 아이템 ul*/
+#search_results_ul {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+/* 검색 결과 아이템 li태그 */
+.search-result-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
+}
+/* 마지막 검색 결과 아이템은 border-bottom 제거 */
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.search-result-item :hover {
+  color: var(--primary);
+}
+
+/* 검색 결과가 없을 때 메시지 */
+#search_results_ul p {
+  padding: 10px;
+  color: #666;
+  margin: 0;
+}
+
+/* ------------------------------------------- */
+/* 필터 스타일링 */
+#filter_section {
+  color: var(--primary);
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-select {
+  padding: 6px 10px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--primary);
+}
+
+.filter-select :focus {
+  border: none;
+}
