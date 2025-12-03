@@ -27,6 +27,16 @@ const GAME_LIST = [
     description:
       "세계에서 가장 인기있는 가족 게임 중 하나로, 숫자 타일을 이용해 다양한 조합을 만들어내는 전략 게임입니다.",
   },
+  {
+    id: 4,
+    name: "할리갈리 (Halli Galli)",
+    players: "2-6",
+    playtime: 15,
+    difficulty: "쉬움",
+    image: "public/game-image/main/4-halli-galli.jpeg",
+    description:
+      "빠른 판단력과 반사 신경이 요구되는 카드 게임으로, 과일이 그려진 카드를 보고 종을 빠르게 치는 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
