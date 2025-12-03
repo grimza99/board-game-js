@@ -6,6 +6,7 @@ import { SPLENDOR } from "./5-splendor.js";
 import { AZUL } from "./6-Azul.js";
 import { SKULL } from "./7-skull.js";
 import { PANDEMIC } from "./8-pandemic.js";
+import { LAS_VEGAS } from "./9-Las.Vegas.js";
 
 export const GAME_DETAIL_MAP = new Map();
 
@@ -17,3 +18,4 @@ GAME_DETAIL_MAP.set(5, SPLENDOR); //스플렌더(Splendor)
 GAME_DETAIL_MAP.set(6, AZUL); //아줄
 GAME_DETAIL_MAP.set(7, SKULL); //스컬
 GAME_DETAIL_MAP.set(8, PANDEMIC); //팬데믹
+GAME_DETAIL_MAP.set(9, LAS_VEGAS); //라스베가스(Las Vegas)

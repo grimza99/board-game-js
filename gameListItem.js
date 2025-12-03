@@ -77,6 +77,16 @@ const GAME_LIST = [
     description:
       "전 세계에 퍼진 질병을 치료하고 인류를 구하는 협력 전략 게임입니다.",
   },
+  {
+    id: 9,
+    name: "라스베가스 (Las Vegas)",
+    players: "2-5",
+    playtime: "30",
+    difficulty: "쉬움",
+    image: "public/game-image/main/9-Las.Vegas.jpeg",
+    description:
+      "주사위를 굴려 카지노에 배치하고, 가장 많은 돈을 벌어 승리하는 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
