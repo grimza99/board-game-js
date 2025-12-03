@@ -21,7 +21,7 @@ import { QWIXX } from "./20-Qwixx.js";
 import { DECRYPTO } from "./21-decrypto.js";
 import { CENTURY_SPICE_ROAD } from "./22-Century-Spice-Road.js";
 import { RESISTANCE_AVALON } from "./23-Resistance-Avalon.js";
-
+import { SPLENDOR_DUEL } from "./24-Splendor-Duel.js";
 export const GAME_DETAIL_MAP = new Map();
 
 GAME_DETAIL_MAP.set(1, CATAN); //카탄의 개척자들(Catan)
@@ -47,3 +47,4 @@ GAME_DETAIL_MAP.set(20, QWIXX); //퀵스(Qwixx)
 GAME_DETAIL_MAP.set(21, DECRYPTO); //디크립토(Decrypto)
 GAME_DETAIL_MAP.set(22, CENTURY_SPICE_ROAD); //센추리: 향신료의 길(Century: Spice Road)
 GAME_DETAIL_MAP.set(23, RESISTANCE_AVALON); //레지스탕스 아발론(The Resistance Avalon)
+GAME_DETAIL_MAP.set(24, SPLENDOR_DUEL); //스플렌더 듀얼(Splendor Duel)

@@ -227,6 +227,16 @@ const GAME_LIST = [
     description:
       "선과 악으로 나뉘어 임무를 수행하는 정체 은폐 심리게임. 마피아의 전략 버전 게임입니다.",
   },
+  {
+    id: 24,
+    name: "스플렌더 듀얼 (Splendor Duel)",
+    players: "2",
+    playtime: "30",
+    difficulty: "중간",
+    image: "public/game-image/main/24-Splendor-Duel.jpeg",
+    description:
+      "스플렌더의 2인 전용 버전으로, 보석을 수집하고 카드를 구매하여 최고의 상인이 되는 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
