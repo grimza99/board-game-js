@@ -1,4 +1,4 @@
-import showReplyGameForm from "./reply-game.js";
+import showRequestGameForm from "./request-game/request-game.js";
 import { filteredGames, handleSearchInputGame } from "./search/search.js";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function setupEventListeners() {
-  const replyNewGameBtn = document.getElementById("reply-new-game-button");
+  const replyNewGameBtn = document.getElementById("request_game_button");
   if (replyNewGameBtn) {
     replyNewGameBtn.addEventListener("click", () => {
-      showReplyGameForm();
+      showRequestGameForm();
     });
   }
 

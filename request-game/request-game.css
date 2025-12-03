@@ -1,7 +1,25 @@
-#reply-game-form-modal {
+#request_game_button {
+  font-size: 12px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background-color: white;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#request-game-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+#request_game_form_modal {
   display: absolute;
 }
-#reply-game-modal-overlay {
+#request_game_modal_overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +32,7 @@
   display: flex;
 }
 
-#reply-game-modal-content {
+#request_game_modal_content {
   position: relative;
   display: flex;
   align-items: center;
@@ -27,10 +45,18 @@
   z-index: 600;
 }
 
-#close_reply_game_modal {
+#close_request_game_modal {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: none;
-  border: none;
 }
+
+/* -------------------------------------------- */
+/*모바일*/
+@media (max-width: 375px) {
+  #request_game_modal_content {
+    width: 90%;
+    padding: 10px;
+  }
+}
+/* -------------------------------------------- */
