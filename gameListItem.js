@@ -217,6 +217,16 @@ const GAME_LIST = [
     description:
       "향신료 큐브를 거래·업그레이드·교환하며 물건 카드를 구매하는 엔진 빌딩 게임입니다.",
   },
+  {
+    id: 23,
+    name: "레지스탕스 아발론 (The Resistance Avalon)",
+    players: "5-10",
+    playtime: "30",
+    difficulty: "중간",
+    image: "public/game-image/main/23-Resistance-Avalon.jpeg",
+    description:
+      "선과 악으로 나뉘어 임무를 수행하는 정체 은폐 심리게임. 마피아의 전략 버전 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
