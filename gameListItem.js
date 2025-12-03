@@ -37,6 +37,16 @@ const GAME_LIST = [
     description:
       "빠른 판단력과 반사 신경이 요구되는 카드 게임으로, 과일이 그려진 카드를 보고 종을 빠르게 치는 게임입니다.",
   },
+  {
+    id: 5,
+    name: "스플렌더 (Splendor)",
+    players: "2-4",
+    playtime: 30,
+    difficulty: "중간",
+    image: "public/game-image/main/5-splendor.jpeg",
+    description:
+      "르네상스 시대의 보석 상인이 되어 보석을 수집하고, 건물을 건설하여 최고의 상인이 되는 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
