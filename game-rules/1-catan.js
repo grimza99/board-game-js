@@ -1,13 +1,9 @@
+import GAME_LIST from "../game-list/game-list-Item.js";
+
 export const CATAN = {
   title: "카탄의 개척자들",
   image: "public/game-image/detail/1-catan.jpeg",
-  info: {
-    description:
-      "카탄의 개척자들은 자원을 모아 섬을 개발하는 전략 게임입니다. 플레이어들은 도로, 마을, 도시를 건설하고, 자원을 교환하며 승점을 획득합니다. 가장 먼저 정해진 승점에 도달한 플레이어가 승리합니다.",
-    players: "3-4",
-    playtime: "60-120",
-    difficulty: "중간",
-  },
+  info: GAME_LIST[0],
   rule: `
   <div class='game-rule-box 'id="goal">
     <h4>🏆 1) 승리 조건</h4>

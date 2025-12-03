@@ -1,13 +1,9 @@
+import GAME_LIST from "../game-list/game-list-Item.js";
+
 export const TICKET_TO_RIDE = {
   title: "티켓 투 라이드",
   image: "public/game-image/detail/2-ticket_to_ride.jpeg",
-  info: {
-    description:
-      "티켓 투 라이드는 철도 노선을 연결하여 목적지를 완성하는 게임입니다. 플레이어들은 카드를 모아 노선을 건설하고, 목적지 카드를 완성하여 점수를 획득합니다.",
-    players: "2-5",
-    playtime: "30-60",
-    difficulty: "쉬움",
-  },
+  info: GAME_LIST[1],
   rule: `
   <div id="goal">
     <h4>🎯 1) 게임 목표</h4>

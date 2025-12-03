@@ -1,13 +1,9 @@
+import GAME_LIST from "../game-list/game-list-Item.js";
+
 export const RUMMIKUB = {
   title: "루미큐브(Rummikub)",
   image: "public/game-image/detail/3-rummikub.jpeg",
-  info: {
-    description:
-      "세계에서 가장 인기있는 가족 게임 중 하나로, 숫자 타일을 이용해 다양한 조합을 만들어내는 전략 게임입니다.",
-    players: "2-4",
-    playtime: "20",
-    difficulty: "쉬움",
-  },
+  info: GAME_LIST[2],
   rule: `
   <div id="goal">
     <h4>🎯 1) 승리 조건</h4>

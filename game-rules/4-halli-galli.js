@@ -1,13 +1,10 @@
+import GAME_LIST from "../game-list/game-list-Item.js";
+
 export const HALLI_GALLI = {
   title: "할리갈리 (Halli Galli)",
+
   image: "public/game-image/detail/4-halli-galli.jpeg",
-  info: {
-    description:
-      "빠른 판단력과 반사 신경이 요구되는 카드 게임으로, 과일이 그려진 카드를 보고 종을 빠르게 치는 게임입니다.",
-    players: "2-6",
-    playtime: "15",
-    difficulty: "쉬움",
-  },
+  info: GAME_LIST[3],
   rule: `
   <div id="goal">
     <h4>🎯 1) 승리 조건</h4>
