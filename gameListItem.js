@@ -97,6 +97,16 @@ const GAME_LIST = [
     description:
       "스파이 마스터가 내는 단어 힌트를 통해, 팀원들이 우리 팀 단어를 찾는 팀 대결 단어 게임입니다.",
   },
+  {
+    id: 11,
+    name: "보난자 (Bohnanza)",
+    players: "3-7",
+    playtime: "45",
+    difficulty: "중간",
+    image: "public/game-image/main/11-Bohnanza.jpeg",
+    description:
+      "콩을 심고 거래하며 수확하여 가장 많은 금화를 모으는 전략 카드 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
