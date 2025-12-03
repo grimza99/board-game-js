@@ -5,5 +5,5 @@ import { RUMMIKUB } from "./3-rummikub.js";
 export const GAME_DETAIL_MAP = new Map();
 
 GAME_DETAIL_MAP.set(1, CATAN); //카탄의 개척자들(Catan)
-GAME_DETAIL_MAP.set(2, TICKET_TO_RIDE); //티켓 투 라이드
+GAME_DETAIL_MAP.set(2, TICKET_TO_RIDE); //티켓 투 라이드(Ticket to Ride)
 GAME_DETAIL_MAP.set(3, RUMMIKUB); //루미큐브(Rummikub)
