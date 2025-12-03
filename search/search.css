@@ -1,3 +1,19 @@
+/* 검색 인풋 스타일링 */
+#game_search_input {
+  width: 70%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+#search_button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 4px;
+}
+
 /*검색 결과 아이템 ul*/
 #search_results_ul {
   border: 1px solid #ccc;
@@ -6,6 +22,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
 }
 /* 검색 결과 아이템 li태그 */
 .search-result-item {
@@ -36,4 +54,5 @@
 #search_results_ul p {
   padding: 10px;
   color: #666;
+  margin: 0;
 }

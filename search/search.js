@@ -26,7 +26,7 @@ function createSearchResultItem(game) {
 
 /**인풋 검색 연산 */
 export function handleSearchInputGame() {
-  const searchInput = document.getElementById("gameSearch");
+  const searchInput = document.getElementById("game_search_input");
   const searchResults = document.getElementById("search_results");
 
   if (!searchInput || !searchResults) return;
