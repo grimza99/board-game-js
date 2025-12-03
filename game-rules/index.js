@@ -14,6 +14,7 @@ import { AZUL } from "./6-Azul.js";
 import { SKULL } from "./7-skull.js";
 import { PANDEMIC } from "./8-pandemic.js";
 import { LAS_VEGAS } from "./9-Las.Vegas.js";
+import { DOMINION } from "./18-dominion.js";
 import { WINNERS_CIRCLE } from "./17-winners-circle.js";
 export const GAME_DETAIL_MAP = new Map();
 
@@ -34,3 +35,4 @@ GAME_DETAIL_MAP.set(14, DIXIT); //딕싯
 GAME_DETAIL_MAP.set(15, TERRAFORMING_MARS); //테라포밍 마스(Terraforming Mars)
 GAME_DETAIL_MAP.set(16, KINGDOMINO); //킹도미노(Kingdomino)
 GAME_DETAIL_MAP.set(17, WINNERS_CIRCLE); //위너스 서클(Winner's Circle)
+GAME_DETAIL_MAP.set(18, DOMINION); //도미니언(Dominion)

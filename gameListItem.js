@@ -167,6 +167,16 @@ const GAME_LIST = [
     description:
       "말 7마리의 능력치를 바탕으로 배팅하고, 경주 결과에 따라 점수를 획득하는 심리·예측 게임입니다.",
   },
+  {
+    id: 18,
+    name: "도미니언 (Dominion)",
+    players: "2-4",
+    playtime: "30",
+    difficulty: "중간",
+    image: "public/game-image/main/18-dominion.jpeg",
+    description:
+      "덱 빌딩 카드 게임의 원조로, 다양한 카드를 조합해 자신의 덱을 강화하고 승점을 획득하는 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
