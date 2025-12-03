@@ -117,6 +117,16 @@ const GAME_LIST = [
     description:
       "왕궁에서 공주의 마음을 얻기 위해 편지를 전달하는 짧고 간단한 카드 게임입니다.",
   },
+  {
+    id: 13,
+    name: "도블 (Dobble / Spot It!)",
+    players: "2-8",
+    playtime: "15",
+    difficulty: "쉬움",
+    image: "public/game-image/main/13-Dobble.jpeg",
+    description:
+      "빠른 관찰력과 반사 신경이 요구되는 카드 게임으로, 카드들 사이에서 공통된 심볼을 찾아내는 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
