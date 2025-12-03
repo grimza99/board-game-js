@@ -107,6 +107,16 @@ const GAME_LIST = [
     description:
       "콩을 심고 거래하며 수확하여 가장 많은 금화를 모으는 전략 카드 게임입니다.",
   },
+  {
+    id: 12,
+    name: "러브레터 (Love Letter)",
+    players: "2-4",
+    playtime: "20",
+    difficulty: "쉬움",
+    image: "public/game-image/main/12-Love.Letter.jpeg",
+    description:
+      "왕궁에서 공주의 마음을 얻기 위해 편지를 전달하는 짧고 간단한 카드 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
