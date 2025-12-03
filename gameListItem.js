@@ -177,6 +177,16 @@ const GAME_LIST = [
     description:
       "덱 빌딩 카드 게임의 원조로, 다양한 카드를 조합해 자신의 덱을 강화하고 승점을 획득하는 전략 게임입니다.",
   },
+  {
+    id: 19,
+    name: "사이쓰 (Scythe)",
+    players: "1-5",
+    playtime: "120",
+    difficulty: "어려움",
+    image: "public/game-image/main/19-Scythe.jpeg",
+    description:
+      "매우 어려운 게임으로, 대체 역사 배경의 전략 게임입니다. 자원 관리, 영역 확장, 전투 등을 통해 자신의 세력을 키워나가는 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
