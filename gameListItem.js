@@ -137,6 +137,16 @@ const GAME_LIST = [
     description:
       "상상력과 창의력을 발휘하여 아름다운 일러스트 카드로 이야기를 만들어가는 게임입니다.",
   },
+  {
+    id: 15,
+    name: "테라포밍 마스 (Terraforming Mars)",
+    players: "1-5",
+    playtime: "120",
+    difficulty: "어려움",
+    image: "public/game-image/main/15-Terraforming-Mars.jpeg",
+    description:
+      "화성을 개척하고 환경을 변화시켜 인간이 살 수 있는 행성으로 만드는 전략 게임입니다.",
+  },
 ];
 
 export default GAME_LIST;
