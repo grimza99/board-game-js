@@ -1,9 +1,9 @@
-import { showGameDetail } from "../gameDetail.js";
+import { showGameDetail } from '../gameDetail.js';
 
 export function renderGameList(gameList) {
-  const gameListElement = document.getElementById("game_list");
+  const gameListElement = document.getElementById('game_list');
   if (!gameListElement) return;
-  gameListElement.innerHTML = "";
+  gameListElement.innerHTML = '';
   gameList.forEach((game) => {
     const gameCard = createGameCard(game);
     gameListElement.appendChild(gameCard);
@@ -11,8 +11,8 @@ export function renderGameList(gameList) {
 }
 
 export function createGameCard(game) {
-  const card = document.createElement("button");
-  card.className = "game_card";
+  const card = document.createElement('button');
+  card.className = 'game_card';
   card.innerHTML = `
     <div class="game_card_content">
       <h3 class='game_name'>${game.name}</h3>
@@ -25,7 +25,7 @@ export function createGameCard(game) {
     </div>
     <img src="${game.image}" alt="${game.name}" class="game_image"/>
   `;
-  card.addEventListener("click", () => {
+  card.addEventListener('click', () => {
     showGameDetail(game.id, game.name);
   });
   return card;
