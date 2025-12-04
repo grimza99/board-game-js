@@ -9,7 +9,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "strict": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
