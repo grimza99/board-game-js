@@ -1,10 +1,17 @@
+import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
 import { showGameDetail } from '../gameDetail.js';
+import GAME_LIST from './game-list-Item.js';
 
-export function renderGameList(gameList) {
+export function renderGameList(gameList = GAME_LIST, currentPage = 1) {
   const gameListElement = document.getElementById('game_list');
   if (!gameListElement) return;
+
+  const startIndex = (currentPage - 1) * GAMES_LIST_PAGE_SIZE;
+  const endIndex = startIndex + GAMES_LIST_PAGE_SIZE;
+  const paginatedGames = gameList.slice(startIndex, endIndex);
+
   gameListElement.innerHTML = '';
-  gameList.forEach((game) => {
+  paginatedGames.forEach((game) => {
     const gameCard = createGameCard(game);
     gameListElement.appendChild(gameCard);
   });

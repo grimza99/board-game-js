@@ -1,4 +1,5 @@
 import { PAGINATION_BUTTON_COUNT } from '../constants/pagination.ts';
+import { renderGameList } from './game-list.js';
 
 export default function renderPagination() {
   const paginationContainer =
@@ -43,5 +44,5 @@ const handleNextPage = () => {
 };
 
 const handlePageNumberClick = (pageNumber: number) => {
-  console.log(`${pageNumber} 페이지로 이동`);
+  renderGameList(undefined, pageNumber);
 };
