@@ -1,5 +1,5 @@
-import * as G1 from "./game-rules-1/index.js";
-import * as G2 from "./game-rules-2/index.js";
+import * as G1 from './game-rules-1/index.js';
+import * as G2 from './game-rules-2/index.js';
 export const GAME_DETAIL_MAP = new Map();
 
 GAME_DETAIL_MAP.set(1, G1.CATAN); //카탄의 개척자들(Catan)
@@ -12,7 +12,7 @@ GAME_DETAIL_MAP.set(7, G1.SKULL); //스컬
 GAME_DETAIL_MAP.set(8, G1.PANDEMIC); //팬데믹
 GAME_DETAIL_MAP.set(9, G1.LAS_VEGAS); //라스베가스(Las Vegas)
 GAME_DETAIL_MAP.set(10, G1.CODE_NAMES); //코드네임(Codenames)
-GAME_DETAIL_MAP.set(11, G1.BOHNANAZA); //보난자(Bohnanza)
+GAME_DETAIL_MAP.set(11, G1.BOHNANZA); //보난자(Bohnanza)
 GAME_DETAIL_MAP.set(12, G1.LOVE_LETTER); //러브레터(Love Letter)
 GAME_DETAIL_MAP.set(13, G1.DOBBLE); //도블
 GAME_DETAIL_MAP.set(14, G1.DIXIT); //딕싯
