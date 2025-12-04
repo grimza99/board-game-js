@@ -58,7 +58,7 @@ export function handleSearchInputGame() {
 export function filteredGames() {
   const playerFilter = document.getElementById('player-filter-options');
   const difficultyFilter = document.getElementById('difficulty-filter-options');
-  const gameListElement = document.getElementById('game-list');
+  const gameListElement = document.getElementById('game_list');
 
   if (!playerFilter || !gameListElement || !difficultyFilter) return;
 

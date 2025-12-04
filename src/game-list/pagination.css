@@ -1,0 +1,16 @@
+#pagination_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.arrow_icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* 현재 페이지 버튼 스타일 */
+#current_page {
+  color: var(--primary);
+}
