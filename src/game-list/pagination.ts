@@ -1,7 +1,4 @@
-import {
-  GAMES_LIST_PAGE_SIZE,
-  MAX_PAGINATION_BUTTON,
-} from '../constants/pagination.ts';
+import { MAX_PAGINATION_BUTTON } from '../constants/pagination.ts';
 import { renderGameList } from './game-list.js';
 
 export default function renderPagination(
@@ -22,7 +19,14 @@ export default function renderPagination(
   paginationContainer.appendChild(prevButton);
 
   //page button
-  for (let i = 1; i <= totalPage; i++) {
+  const startPage = Math.max(
+    1,
+    Math.min(
+      currentPage - Math.floor(MAX_PAGINATION_BUTTON / 2),
+      totalPage - MAX_PAGINATION_BUTTON + 1
+    )
+  );
+  for (let i = startPage; i <= totalPage; i++) {
     if (i > MAX_PAGINATION_BUTTON) break; // 최대 페이지 버튼 수 제한
     const pageButton = document.createElement('button');
     pageButton.className = 'pagination_button page-number';
