@@ -26,16 +26,18 @@ export default function renderPagination(
       totalPage - MAX_PAGINATION_BUTTON + 1
     )
   );
-  for (let i = startPage; i <= totalPage; i++) {
-    if (i > MAX_PAGINATION_BUTTON) break; // 최대 페이지 버튼 수 제한
+  for (let i = 0; i < MAX_PAGINATION_BUTTON; i++) {
+    if (i + startPage > totalPage) break;
+
     const pageButton = document.createElement('button');
     pageButton.className = 'pagination_button page-number';
-    if (i === currentPage) {
+
+    if (i + startPage === currentPage) {
       pageButton.id = 'current_page' as string;
     }
-    pageButton.textContent = i.toString();
+    pageButton.textContent = (i + startPage).toString();
     pageButton.addEventListener('click', () =>
-      handlePageNumberClick(i, totalPage)
+      handlePageNumberClick(i + startPage, totalPage)
     );
     paginationContainer.appendChild(pageButton);
   }
