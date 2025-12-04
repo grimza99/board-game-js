@@ -1,0 +1,11 @@
+#pagination_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.arrow_icon {
+  width: 16px;
+  height: 16px;
+}
