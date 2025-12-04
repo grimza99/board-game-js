@@ -1,12 +1,10 @@
 import GAME_LIST from './game-list/game-list-Item.js';
 import { renderGameList } from './game-list/game-list.js';
-import renderPagination from './game-list/pagination.js';
 import showRequestGameForm from './request-game/request-game.js';
 import { filteredGames, handleSearchInputGame } from './search/search.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderGameList(GAME_LIST); //초기 게임 리스트 렌더링
-  renderPagination(); //페이지네이션 렌더링
   setupEventListeners();
 });
 

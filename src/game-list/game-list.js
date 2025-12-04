@@ -1,6 +1,7 @@
 import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
 import { showGameDetail } from '../gameDetail.js';
 import GAME_LIST from './game-list-Item.js';
+import renderPagination from './pagination.ts';
 
 export function renderGameList(gameList = GAME_LIST, currentPage = 1) {
   const gameListElement = document.getElementById('game_list');
@@ -15,6 +16,10 @@ export function renderGameList(gameList = GAME_LIST, currentPage = 1) {
     const gameCard = createGameCard(game);
     gameListElement.appendChild(gameCard);
   });
+  renderPagination(
+    currentPage,
+    Math.ceil(gameList.length / GAMES_LIST_PAGE_SIZE)
+  );
 }
 
 export function createGameCard(game) {
