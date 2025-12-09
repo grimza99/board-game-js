@@ -9,3 +9,4 @@ export { BARRAGE } from './28-Barrage.js';
 export { _7_WONDERS_DUEL } from './29-7WondersDuel.js';
 export { THE_CASTLES_OF_BURGUNDY } from './30-TheCastlesofBurgundy.js';
 export { PUERTO_RICO } from './31-PuertoRico.js';
+export { KANBAN_EV } from './32-KanbanEV.js';

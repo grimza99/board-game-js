@@ -307,6 +307,16 @@ const GAME_LIST = [
     description:
       '식민지 시대의 푸에르토리코에서 농장을 운영하고 건물을 건설하며 점수를 획득하는 전략 게임입니다.',
   },
+  {
+    id: 32,
+    name: '칸반 EV (Kanban EV)',
+    players: '1-4',
+    playtime: '150',
+    difficulty: '어려움',
+    image: 'public/game-image/main/32-KanbanEV.jpeg',
+    description:
+      '전기차 생산 공장을 운영하며 효율적인 생산과 혁신을 통해 최고의 자동차 회사를 만드는 전략 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
