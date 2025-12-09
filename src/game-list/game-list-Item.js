@@ -287,6 +287,16 @@ const GAME_LIST = [
     description:
       '두 플레이어가 고대 문명을 발전시키며 불가사의를 건설하는 전략 카드 게임입니다.',
   },
+  {
+    id: 30,
+    name: '버건디의 성들 (The Castles of Burgundy)',
+    players: '2-4',
+    playtime: '60',
+    difficulty: '중간',
+    image: 'public/game-image/main/30-TheCastlesofBurgundy.jpeg',
+    description:
+      '중세 프랑스 버건디 지역을 배경으로, 영지를 확장하고 건물을 건설하는 전략 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;

@@ -32,3 +32,4 @@ GAME_DETAIL_MAP.set(26, G2.THROUGH_THE_AGES); //쓰루 디 에이지스(Through 
 GAME_DETAIL_MAP.set(27, G2.GAIA_PROJECT); //가이아 프로젝트(Gaia Project)
 GAME_DETAIL_MAP.set(28, G2.BARRAGE); //버라지(Barrage)
 GAME_DETAIL_MAP.set(29, G2._7_WONDERS_DUEL); //7 원더스 대결(7 Wonders Duel)
+GAME_DETAIL_MAP.set(30, G2.THE_CASTLES_OF_BURGUNDY); //버건디의 성들(The Castles of Burgundy)
