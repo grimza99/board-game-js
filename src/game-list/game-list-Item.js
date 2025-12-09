@@ -257,6 +257,16 @@ const GAME_LIST = [
     description:
       '수많은 리소스 관리, 정부 선택, 인물 영입, 건물 기술 개발을 통해 문명을 성장시키는 전략 게임입니다.',
   },
+  {
+    id: 27,
+    name: '가이아 프로젝트 (Gaia Project)',
+    players: '1-4',
+    playtime: '150',
+    difficulty: '어려움',
+    image: 'public/game-image/main/27-GaiaProject.jpeg',
+    description:
+      '우주 식민지 건설과 발전을 목표로 하는 전략 게임으로, 다양한 종족과 기술 트랙을 활용해 점수를 획득합니다.',
+  },
 ];
 
 export default GAME_LIST;
