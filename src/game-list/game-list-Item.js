@@ -267,6 +267,16 @@ const GAME_LIST = [
     description:
       '우주 식민지 건설과 발전을 목표로 하는 전략 게임으로, 다양한 종족과 기술 트랙을 활용해 점수를 획득합니다.',
   },
+  {
+    id: 28,
+    name: '버라지 (Barrage)',
+    players: '2-4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/28-Barrage.jpeg',
+    description:
+      '수력 발전소를 건설하고 운영하여 에너지를 생산하는 전략 게임으로, 자원 관리와 타일 배치가 핵심입니다.',
+  },
 ];
 
 export default GAME_LIST;

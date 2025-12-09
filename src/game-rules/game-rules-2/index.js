@@ -5,3 +5,4 @@ export { SPLENDOR_DUEL } from './24-splendor-duel.js';
 export { GLOOM_HAVEN } from './25-Gloomhaven.js';
 export { THROUGH_THE_AGES } from './26-Through-the-Ages.js';
 export { GAIA_PROJECT } from './27-GaiaProject.js';
+export { BARRAGE } from './28-Barrage.js';
