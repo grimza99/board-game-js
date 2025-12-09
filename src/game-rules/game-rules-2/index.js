@@ -11,3 +11,4 @@ export { THE_CASTLES_OF_BURGUNDY } from './30-TheCastlesofBurgundy.js';
 export { PUERTO_RICO } from './31-PuertoRico.js';
 export { KANBAN_EV } from './32-KanbanEV.js';
 export { TWILIGHT_STRUGGLE } from './33-TwilightStruggle.js';
+export { ARK_NOVA } from './34-ArkNova.js';

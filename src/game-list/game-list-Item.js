@@ -327,6 +327,16 @@ const GAME_LIST = [
     description:
       '냉전 시대를 배경으로 미국과 소련이 세계 패권을 놓고 벌이는 전략 보드 게임입니다.',
   },
+  {
+    id: 34,
+    name: '아크 노바 (Ark Nova)',
+    players: '1-3',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/34-ArkNova.jpeg',
+    description:
+      '동물원 설계, 협회 활동, 보전 프로젝트 등 다양한 액션을 성장시키며 최적의 동물원을 구성하는 1~4인의 전략 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
