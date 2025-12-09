@@ -317,6 +317,16 @@ const GAME_LIST = [
     description:
       '전기차 생산 공장을 운영하며 효율적인 생산과 혁신을 통해 최고의 자동차 회사를 만드는 전략 게임입니다.',
   },
+  {
+    id: 33,
+    name: '황혼의 투쟁 (Twilight Struggle)',
+    players: '2',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/33-TwilightStruggle.jpeg',
+    description:
+      '냉전 시대를 배경으로 미국과 소련이 세계 패권을 놓고 벌이는 전략 보드 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;

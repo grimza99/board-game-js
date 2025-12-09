@@ -35,3 +35,4 @@ GAME_DETAIL_MAP.set(29, G2._7_WONDERS_DUEL); //7 원더스 대결(7 Wonders Duel
 GAME_DETAIL_MAP.set(30, G2.THE_CASTLES_OF_BURGUNDY); //버건디의 성들(The Castles of Burgundy)
 GAME_DETAIL_MAP.set(31, G2.PUERTO_RICO); //푸에르토리코(Puerto Rico)
 GAME_DETAIL_MAP.set(32, G2.KANBAN_EV); //칸반 EV(Kanban EV)
+GAME_DETAIL_MAP.set(33, G2.TWILIGHT_STRUGGLE); //트와일라잇 스트러글(Twilight Struggle)
