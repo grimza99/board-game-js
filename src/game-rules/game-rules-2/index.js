@@ -6,3 +6,4 @@ export { GLOOM_HAVEN } from './25-Gloomhaven.js';
 export { THROUGH_THE_AGES } from './26-Through-the-Ages.js';
 export { GAIA_PROJECT } from './27-GaiaProject.js';
 export { BARRAGE } from './28-Barrage.js';
+export { _7_WONDERS_DUEL } from './29-7WondersDuel.js';

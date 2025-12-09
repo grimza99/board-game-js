@@ -277,6 +277,16 @@ const GAME_LIST = [
     description:
       '수력 발전소를 건설하고 운영하여 에너지를 생산하는 전략 게임으로, 자원 관리와 타일 배치가 핵심입니다.',
   },
+  {
+    id: 29,
+    name: '7 원더스 대결 (7 Wonders Duel)',
+    players: '2',
+    playtime: '30',
+    difficulty: '중간',
+    image: 'public/game-image/main/29-7WondersDuel.jpeg',
+    description:
+      '두 플레이어가 고대 문명을 발전시키며 불가사의를 건설하는 전략 카드 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
