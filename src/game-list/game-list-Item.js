@@ -297,6 +297,16 @@ const GAME_LIST = [
     description:
       '중세 프랑스 버건디 지역을 배경으로, 영지를 확장하고 건물을 건설하는 전략 게임입니다.',
   },
+  {
+    id: 31,
+    name: '푸에르토리코 (Puerto Rico)',
+    players: '3-5',
+    playtime: '90',
+    difficulty: '중간',
+    image: 'public/game-image/main/31-PuertoRico.jpeg',
+    description:
+      '식민지 시대의 푸에르토리코에서 농장을 운영하고 건물을 건설하며 점수를 획득하는 전략 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
