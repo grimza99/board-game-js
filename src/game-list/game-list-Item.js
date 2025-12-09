@@ -247,6 +247,16 @@ const GAME_LIST = [
     description:
       '협력형 전술 전투 캠페인 게임으로, 캐릭터의 지속 성장과 시나리오 기반 전투가 중심입니다.',
   },
+  {
+    id: 26,
+    name: '쓰루 디 에이지스: 문명에 관한 새로운 이야기 (Through the Ages: A New Story of Civilization)',
+    players: '4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/26-Through-the-Ages.jpeg',
+    description:
+      '수많은 리소스 관리, 정부 선택, 인물 영입, 건물 기술 개발을 통해 문명을 성장시키는 전략 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;

@@ -3,3 +3,4 @@ export { CENTURY_SPICE_ROAD } from './22-Century-Spice-Road.js';
 export { RESISTANCE_AVALON } from './23-Resistance-Avalon.js';
 export { SPLENDOR_DUEL } from './24-splendor-duel.js';
 export { GLOOM_HAVEN } from './25-Gloomhaven.js';
+export { THROUGH_THE_AGES } from './26-Through-the-Ages.js';
