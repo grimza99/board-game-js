@@ -397,6 +397,16 @@ const GAME_LIST = [
     description:
       '영혼들이 협력해 섬을 침략하는 식민 세력을 몰아내는 완전 협력형 방어 전략 게임입니다',
   },
+  {
+    id: 41,
+    name: '아그리콜라 (Agricola)',
+    players: '5+',
+    playtime: '120',
+    difficulty: '중간',
+    image: 'public/game-image/main/41-Agricola.jpeg',
+    description:
+      '농부가 되어 밭을 갈고, 가축을 기르고, 가족을 늘려 점수를 최적화하는 일꾼 놓기 농장 경영 게임입니다',
+  },
 ];
 
 export default GAME_LIST;

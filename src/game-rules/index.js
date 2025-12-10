@@ -1,5 +1,6 @@
 import * as G1 from './game-rules-1/index.js';
 import * as G2 from './game-rules-2/index.js';
+import * as G3 from './game-rules-3/index.js';
 export const GAME_DETAIL_MAP = new Map();
 
 GAME_DETAIL_MAP.set(1, G1.CATAN); //카탄의 개척자들(Catan)
@@ -43,3 +44,5 @@ GAME_DETAIL_MAP.set(37, G2.EVER_DELL); //에버델(Everdell)
 GAME_DETAIL_MAP.set(38, G2.BRASS_BIRMINGHAM); //브래스: 버밍엄(Brass: Birmingham
 GAME_DETAIL_MAP.set(39, G2.GREAT_WESTERN_TRAIL); //그레이트 웨스턴 트레일(Great Western Trail)
 GAME_DETAIL_MAP.set(40, G2.SPIRIT_ISLAND); //스피릿 아일랜드(Spirit Island)
+
+GAME_DETAIL_MAP.set(41, G3.AGRICOLA); //아그리콜라(Agricola)
