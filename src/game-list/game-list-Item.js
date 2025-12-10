@@ -337,6 +337,16 @@ const GAME_LIST = [
     description:
       '동물원 설계, 협회 활동, 보전 프로젝트 등 다양한 액션을 성장시키며 최적의 동물원을 구성하는 1~4인의 전략 게임입니다.',
   },
+  {
+    id: 35,
+    name: '루트 (Root)',
+    players: '2-4',
+    playtime: '90',
+    difficulty: '어려움',
+    image: 'public/game-image/main/35-Root.jpeg',
+    description:
+      '여러 동물이 각기 다른 방식으로 숲의 지배권을 두고 싸우는 비대칭 전쟁·영향력 게임입니다',
+  },
 ];
 
 export default GAME_LIST;

@@ -37,3 +37,4 @@ GAME_DETAIL_MAP.set(31, G2.PUERTO_RICO); //푸에르토리코(Puerto Rico)
 GAME_DETAIL_MAP.set(32, G2.KANBAN_EV); //칸반 EV(Kanban EV)
 GAME_DETAIL_MAP.set(33, G2.TWILIGHT_STRUGGLE); //트와일라잇 스트러글(Twilight Struggle)
 GAME_DETAIL_MAP.set(34, G2.ARK_NOVA); //아크노바
+GAME_DETAIL_MAP.set(35, G2.ROOT); //루트(Root)
