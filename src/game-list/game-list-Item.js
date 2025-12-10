@@ -407,6 +407,16 @@ const GAME_LIST = [
     description:
       '농부가 되어 밭을 갈고, 가축을 기르고, 가족을 늘려 점수를 최적화하는 일꾼 놓기 농장 경영 게임입니다',
   },
+  {
+    id: 42,
+    name: '콘코디아 (Concordia)',
+    players: '5+',
+    playtime: '120',
+    difficulty: '중간',
+    image: 'public/game-image/main/42-Concordia.jpeg',
+    description:
+      '고대 로마 무역 제국을 배경으로, 손패 카드를 활용해 종족을 이동시키고 도시를 개척하는 핸드 매니지먼트·엔진 빌딩 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;

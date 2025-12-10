@@ -46,3 +46,4 @@ GAME_DETAIL_MAP.set(39, G2.GREAT_WESTERN_TRAIL); //그레이트 웨스턴 트레
 GAME_DETAIL_MAP.set(40, G2.SPIRIT_ISLAND); //스피릿 아일랜드(Spirit Island)
 
 GAME_DETAIL_MAP.set(41, G3.AGRICOLA); //아그리콜라(Agricola)
+GAME_DETAIL_MAP.set(42, G3.CONCORDIA); //콘코디아(Concordia)
