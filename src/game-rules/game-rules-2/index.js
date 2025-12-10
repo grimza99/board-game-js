@@ -16,3 +16,4 @@ export { ROOT } from './35-Root.js';
 export { WINGSPAN } from './36-Wingspan.js';
 export { EVER_DELL } from './37-Everdell.js';
 export { BRASS_BIRMINGHAM } from './38-Brass-Birmingham.js';
+export { GREAT_WESTERN_TRAIL } from './39-GreatWesternTrail.js';

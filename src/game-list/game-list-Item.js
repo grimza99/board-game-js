@@ -377,6 +377,16 @@ const GAME_LIST = [
     description:
       '산업 혁명 시대 영국에서 공장, 운하, 철도를 건설하며 경제망을 확장하는 헤비 유로 전략 게임입니다',
   },
+  {
+    id: 39,
+    name: '그레이트 웨스턴 트레일 (Great Western Trail)',
+    players: '2-4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/39-GreatWesternTrail.jpeg',
+    description:
+      '목장을 운영하며 소를 모으고, 카우보이를 고용하고, 철도망을 확장해 효율적으로 소를 배송하는 덱빌딩+루트 최적화 전략 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
