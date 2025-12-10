@@ -357,6 +357,16 @@ const GAME_LIST = [
     description:
       '다양한 새 카드를 모아 서식지에 배치하고, 연쇄 능력을 활용해 엔진을 구축하는 엔진 빌딩 게임입니다',
   },
+  {
+    id: 37,
+    name: '에버델 (Everdell)',
+    players: '1-4',
+    playtime: '60',
+    difficulty: '어려움',
+    image: 'public/game-image/main/37-Everdell.jpeg',
+    description:
+      '숲 속 동물들이 마을을 건설하고 건물과 주민을 배치해 아름다운 도시를 만드는 카드·일꾼 놓기 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
