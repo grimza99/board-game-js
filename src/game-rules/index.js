@@ -47,3 +47,4 @@ GAME_DETAIL_MAP.set(40, G2.SPIRIT_ISLAND); //스피릿 아일랜드(Spirit Islan
 
 GAME_DETAIL_MAP.set(41, G3.AGRICOLA); //아그리콜라(Agricola)
 GAME_DETAIL_MAP.set(42, G3.CONCORDIA); //콘코디아(Concordia)
+GAME_DETAIL_MAP.set(43, G3.THE_CREW_MISSION_DEEP_SEA); //더 크루: 딥 시 미션(The Crew: Mission Deep Sea)

@@ -417,6 +417,16 @@ const GAME_LIST = [
     description:
       '고대 로마 무역 제국을 배경으로, 손패 카드를 활용해 종족을 이동시키고 도시를 개척하는 핸드 매니지먼트·엔진 빌딩 게임입니다.',
   },
+  {
+    id: 43,
+    name: '더 크루: 딥 시 미션 (The Crew: Mission Deep Sea)',
+    players: '5+',
+    playtime: '30',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/43-TheCrew-MissionDeepSea.jpeg',
+    description:
+      '협력형 트릭테이킹 게임으로, 플레이어가 함께 미션 목표를 달성해야 성공하는 카드 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
