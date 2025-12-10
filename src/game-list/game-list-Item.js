@@ -367,6 +367,16 @@ const GAME_LIST = [
     description:
       '숲 속 동물들이 마을을 건설하고 건물과 주민을 배치해 아름다운 도시를 만드는 카드·일꾼 놓기 게임입니다.',
   },
+  {
+    id: 38,
+    name: '브라스: 버밍엄 (Brass: Birmingham)',
+    players: '2-4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/38-Brass-Birmingham.jpeg',
+    description:
+      '산업 혁명 시대 영국에서 공장, 운하, 철도를 건설하며 경제망을 확장하는 헤비 유로 전략 게임입니다',
+  },
 ];
 
 export default GAME_LIST;

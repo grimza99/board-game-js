@@ -40,3 +40,4 @@ GAME_DETAIL_MAP.set(34, G2.ARK_NOVA); //아크노바
 GAME_DETAIL_MAP.set(35, G2.ROOT); //루트(Root)
 GAME_DETAIL_MAP.set(36, G2.WINGSPAN); //윙스팬(Wingspan)
 GAME_DETAIL_MAP.set(37, G2.EVER_DELL); //에버델(Everdell)
+GAME_DETAIL_MAP.set(38, G2.BRASS_BIRMINGHAM); //브래스: 버밍엄(Brass: Birmingham
