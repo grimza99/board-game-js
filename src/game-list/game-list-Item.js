@@ -427,6 +427,16 @@ const GAME_LIST = [
     description:
       '협력형 트릭테이킹 게임으로, 플레이어가 함께 미션 목표를 달성해야 성공하는 카드 게임입니다.',
   },
+  {
+    id: 44,
+    name: '클랭크! (Clank!)',
+    players: '2-4',
+    playtime: '60',
+    difficulty: '중간',
+    image: 'public/game-image/main/44-Clank.jpeg',
+    description:
+      '덱빌딩과 던전 탐험이 결합된 게임으로, 소음을 내지 않으면서 보물을 훔쳐 나오면 승리하는 모험 게임입니다',
+  },
 ];
 
 export default GAME_LIST;
