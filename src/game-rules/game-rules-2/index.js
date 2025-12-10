@@ -13,3 +13,4 @@ export { KANBAN_EV } from './32-KanbanEV.js';
 export { TWILIGHT_STRUGGLE } from './33-TwilightStruggle.js';
 export { ARK_NOVA } from './34-ArkNova.js';
 export { ROOT } from './35-Root.js';
+export { WINGSPAN } from './36-Wingspan.js';

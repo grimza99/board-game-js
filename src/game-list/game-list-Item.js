@@ -347,6 +347,16 @@ const GAME_LIST = [
     description:
       '여러 동물이 각기 다른 방식으로 숲의 지배권을 두고 싸우는 비대칭 전쟁·영향력 게임입니다',
   },
+  {
+    id: 36,
+    name: '윙스팬 (Wingspan)',
+    players: '2-5',
+    playtime: '60',
+    difficulty: '중간',
+    image: 'public/game-image/main/36-Wingspan.jpeg',
+    description:
+      '다양한 새 카드를 모아 서식지에 배치하고, 연쇄 능력을 활용해 엔진을 구축하는 엔진 빌딩 게임입니다',
+  },
 ];
 
 export default GAME_LIST;
