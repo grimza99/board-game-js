@@ -42,3 +42,4 @@ GAME_DETAIL_MAP.set(36, G2.WINGSPAN); //윙스팬(Wingspan)
 GAME_DETAIL_MAP.set(37, G2.EVER_DELL); //에버델(Everdell)
 GAME_DETAIL_MAP.set(38, G2.BRASS_BIRMINGHAM); //브래스: 버밍엄(Brass: Birmingham
 GAME_DETAIL_MAP.set(39, G2.GREAT_WESTERN_TRAIL); //그레이트 웨스턴 트레일(Great Western Trail)
+GAME_DETAIL_MAP.set(40, G2.SPIRIT_ISLAND); //스피릿 아일랜드(Spirit Island)

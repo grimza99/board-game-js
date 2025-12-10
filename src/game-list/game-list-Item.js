@@ -387,6 +387,16 @@ const GAME_LIST = [
     description:
       '목장을 운영하며 소를 모으고, 카우보이를 고용하고, 철도망을 확장해 효율적으로 소를 배송하는 덱빌딩+루트 최적화 전략 게임입니다.',
   },
+  {
+    id: 40,
+    name: '스피릿 아일랜드 (Spirit Island)',
+    players: '2-4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/40-SpiritIsland.jpeg',
+    description:
+      '영혼들이 협력해 섬을 침략하는 식민 세력을 몰아내는 완전 협력형 방어 전략 게임입니다',
+  },
 ];
 
 export default GAME_LIST;

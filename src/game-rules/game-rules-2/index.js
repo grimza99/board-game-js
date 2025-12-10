@@ -17,3 +17,4 @@ export { WINGSPAN } from './36-Wingspan.js';
 export { EVER_DELL } from './37-Everdell.js';
 export { BRASS_BIRMINGHAM } from './38-Brass-Birmingham.js';
 export { GREAT_WESTERN_TRAIL } from './39-GreatWesternTrail.js';
+export { SPIRIT_ISLAND } from './40-SpiritIsland.js';
