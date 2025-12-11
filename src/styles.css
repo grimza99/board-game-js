@@ -9,15 +9,16 @@
   --blue: #74b9ff;
   --background: #ffffff;
   --gray800: #313131;
+  --gray400: #707678;
   --text: #2d3436;
-  --text-secondary: #636e72;
+  --text-secondary: #707678;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   background-color: var(--background);
   color: var(--text);
   box-sizing: border-box;
@@ -54,12 +55,31 @@ main {
 
 #footer {
   background-color: var(--gray800);
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #ccc;
+  padding: 20px 80px;
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+#footer_title {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  gap: 8px;
 }
 
+#footer_links {
+  color: var(--text-secondary);
+}
+
+#footer_links span {
+  margin-right: 4px;
+  border-right: 1px solid var(--gray400);
+  padding-right: 6px;
+}
+
+#footer_copy {
+  color: var(--text-secondary);
+}
 #filter_and_request_section {
   margin-top: 20px;
   display: flex;
@@ -69,11 +89,32 @@ main {
 }
 
 /* ------------------------------------------------ */
+/* 타블렛 */
+@media (max-width: 1024px) {
+  #footer {
+    padding: 20px 40px;
+    font-size: 16px;
+  }
+  #footer_title {
+    font-size: 24px;
+  }
+}
+/* ------------------------------------------------ */
 /*모바일*/
 @media (max-width: 375px) {
   #filter_and_request_section {
     margin-top: 16px;
     align-items: end;
     margin-bottom: 10px;
+  }
+  #footer_title {
+    font-size: 20px;
+  }
+  #footer {
+    padding: 20px;
+    font-size: 12px;
+  }
+  #footer_copy {
+    font-size: 14px;
   }
 }
