@@ -1,11 +1,17 @@
 import GAME_LIST from './game-list/game-list-Item.js';
 import { renderGameList } from './game-list/game-list.js';
+import {
+  renderCookiePolicyRoute,
+  renderPrivacyRoute,
+  renderTermsRoute,
+} from './pages';
 import showRequestGameForm from './request-game/request-game.js';
 import { filteredGames, handleSearchInputGame } from './search/search.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderGameList(GAME_LIST); //초기 게임 리스트 렌더링
   setupEventListeners();
+  setUpRouteEventListeners();
 });
 
 //이미 html에 존재하는 요소들에 이벤트 리스너 설정
@@ -42,6 +48,28 @@ function setupEventListeners() {
   if (difficultyFilter) {
     difficultyFilter.addEventListener('change', () => {
       filteredGames();
+    });
+  }
+}
+function setUpRouteEventListeners() {
+  const renderPrivacy = document.getElementById('footer_privacy_route');
+  if (renderPrivacy) {
+    renderPrivacy.addEventListener('click', () => {
+      renderPrivacyRoute();
+    });
+  }
+  const renderTerms = document.getElementById('footer_terms_route');
+  if (renderTerms) {
+    renderTerms.addEventListener('click', () => {
+      renderTermsRoute();
+    });
+  }
+  const renderCookiePolicy = document.getElementById(
+    'footer_cookie_policy_route'
+  );
+  if (renderCookiePolicy) {
+    renderCookiePolicy.addEventListener('click', () => {
+      renderCookiePolicyRoute();
     });
   }
 }
