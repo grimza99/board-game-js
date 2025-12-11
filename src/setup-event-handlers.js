@@ -1,6 +1,10 @@
 import GAME_LIST from './game-list/game-list-Item.js';
 import { renderGameList } from './game-list/game-list.js';
-import { renderPrivacyRoute, renderTermsRoute } from './pages';
+import {
+  renderCookiePolicyRoute,
+  renderPrivacyRoute,
+  renderTermsRoute,
+} from './pages';
 import showRequestGameForm from './request-game/request-game.js';
 import { filteredGames, handleSearchInputGame } from './search/search.js';
 
@@ -58,6 +62,14 @@ function setUpRouteEventListeners() {
   if (renderTerms) {
     renderTerms.addEventListener('click', () => {
       renderTermsRoute();
+    });
+  }
+  const renderCookiePolicy = document.getElementById(
+    'footer_cookie_policy_route'
+  );
+  if (renderCookiePolicy) {
+    renderCookiePolicy.addEventListener('click', () => {
+      renderCookiePolicyRoute();
     });
   }
 }
