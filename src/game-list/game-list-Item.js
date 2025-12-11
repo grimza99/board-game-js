@@ -437,6 +437,105 @@ const GAME_LIST = [
     description:
       '덱빌딩과 던전 탐험이 결합된 게임으로, 소음을 내지 않으면서 보물을 훔쳐 나오면 승리하는 모험 게임입니다',
   },
+  {
+    id: 45,
+    name: '로스트 루인즈 오브 아르낙 (Lost Ruins of Arnak)',
+    players: '1-4',
+    playtime: '90',
+    difficulty: '중간',
+    image: 'public/game-image/main/45-LostRuinsOfArnak.jpeg',
+    description: '탐험·덱빌딩·자원 관리가 결합된 고대 유적 탐험 게임입니다',
+  },
+  {
+    id: 46,
+    name: '카스카디아 (Cascadia)',
+    players: '1-4',
+    playtime: '30',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/46-Cascadia.jpeg',
+    description:
+      '자연 서식지 타일과 동물 토큰을 조합하여 최적의 생태계를 만드는 퍼즐 전략 게임입니다',
+  },
+  {
+    id: 47,
+    name: '히트: 페달 투 더 메탈 (Heat: Pedal to the Metal)',
+    players: '5+',
+    playtime: '45',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/47-HeatPedalToTheMetal.jpeg',
+    description:
+      '핸드 관리와 속도 조절을 통해 자동차 경주를 진행하는 빠른 레이싱 전략 게임입니다',
+  },
+  {
+    id: 48,
+    name: '아일 오브 캣츠 (The Isle of Cats)',
+    players: '2-4',
+    playtime: '60',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/48-TheIsleOfCats.jpeg',
+    description:
+      '테트리스 모양의 고양이 타일을 보트 위에 배치하는 퍼즐 전략 게임입니다',
+  },
+  {
+    id: 49,
+    name: '비티컬처 (Viticulture)',
+    players: '5+',
+    playtime: '90',
+    difficulty: '중간',
+    image: 'public/game-image/main/49-Viticulture.jpeg',
+    description:
+      '포도 농장을 운영하고, 포도를 재배하여 와인을 생산해 판매하는 일꾼 놓기 게임입니다',
+  },
+  {
+    id: 50,
+    name: '파워 그리드 (Power Grid)',
+    players: '5+',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/50-PowerGrid.jpeg',
+    description:
+      '전력망을 구축하고, 도시를 연결하며, 발전소를 효율적으로 운영하는 경제 전략 게임입니다',
+  },
+  {
+    id: 51,
+    name: '하드리안의 장벽 (Hadrian’s Wall)',
+    players: '2-4',
+    playtime: '60',
+    difficulty: '어려움',
+    image: 'public/game-image/main/51-HadriansWall.jpeg',
+    description:
+      '막대한 양의 선택지를 체크하며 로마 요새를 구축하는 헤비 롤앤라이트 게임입니다',
+  },
+  {
+    id: 52,
+    name: '웨스트킹덤의 팔라딘 (Paladins of the West Kingdom)',
+    players: '2-4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/52-PaladinsOfTheWestKingdom.jpeg',
+    description:
+      '침략 방어와 도시 건설, 교회 활동을 통해 점수를 얻는 헤비 일꾼 놓기 전략 게임입니다',
+  },
+  {
+    id: 53,
+    name: '리스보아 (Lisboa)',
+    players: '2-4',
+    playtime: '150',
+    difficulty: '어려움',
+    image: 'public/game-image/main/53-Lisboa.jpeg',
+    description:
+      '1755년 리스본 대지진 이후 도시 재건을 주도하는 복잡한 경제 유로 게임입니다',
+  },
+  {
+    id: 54,
+    name: '마라카이보 (Maracaibo)',
+    players: '2-4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/54-Maracaibo.jpeg',
+    description:
+      '카리브해를 항해하며 탐험·전투·거래를 수행하는 중후한 엔진 빌딩 게임입니다',
+  },
 ];
 
 export default GAME_LIST;
