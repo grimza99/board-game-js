@@ -6,8 +6,10 @@ import { renderCookiePolicyRoute } from './cookie-policy';
 import { renderPrivacyRoute } from './privacy';
 import { renderTermsRoute } from './terms';
 
-export function renderHomeRoute() {
-  window.history.pushState({}, '', '/');
+export function renderHomeRoute(pushHistory = true) {
+  if (pushHistory) {
+    window.history.pushState({}, '', '/');
+  }
   const main = document.getElementById('main-content');
 
   if (!main) return;

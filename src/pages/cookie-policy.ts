@@ -1,9 +1,12 @@
 import { EL_ID } from '../constants/el-id';
 
-export function renderCookiePolicyRoute() {
+export function renderCookiePolicyRoute(pushHistory = true) {
   document.title = '쿠키 정책 | 보드게임위키';
-  const path = `./cookie-policy`;
-  window.history.pushState({}, '', path);
+
+  if (pushHistory) {
+    const path = `./cookie-policy`;
+    window.history.pushState({}, '', path);
+  }
 
   const main = document.getElementById(EL_ID.MAIN);
   if (!main) return;

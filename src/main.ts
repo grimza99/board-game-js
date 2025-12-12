@@ -12,30 +12,29 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function setupHistoryEventListeners() {
-  window.addEventListener('popstate', function (event) {
+  window.addEventListener('popstate', function () {
     const path = window.location.pathname;
     const searchParams = window.location.search;
-
     switch (path) {
       case '/':
-        renderHomeRoute();
+        renderHomeRoute(false);
         return;
       case '/game-rule':
         if (searchParams) {
           const gameId = parseInt(searchParams.substring(1));
           if (gameId) {
-            renderGameDetailRoute(gameId);
+            renderGameDetailRoute(gameId, false);
           }
         }
         return;
       case '/privacy':
-        renderPrivacyRoute();
+        renderPrivacyRoute(false);
         return;
       case '/terms':
-        renderTermsRoute();
+        renderTermsRoute(false);
         return;
       case '/cookie-policy':
-        renderCookiePolicyRoute();
+        renderCookiePolicyRoute(false);
         return;
       default:
         return;
