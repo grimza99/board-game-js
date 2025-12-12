@@ -1,14 +1,10 @@
-import GAME_LIST from './game-list/game-list-Item.js';
-import { renderGameList } from './game-list/game-list.js';
 import {
   renderCookiePolicyRoute,
   renderHomeRoute,
   renderPrivacyRoute,
   renderTermsRoute,
-} from './pages';
+} from './pages/index.js';
 import { renderGameDetailRoute } from './pages/game-detail.js';
-import showRequestGameForm from './request-game/request-game.js';
-import { filteredGames, handleSearchInputGame } from './search/search.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderHomeRoute();
