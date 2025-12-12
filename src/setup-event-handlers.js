@@ -2,74 +2,47 @@ import GAME_LIST from './game-list/game-list-Item.js';
 import { renderGameList } from './game-list/game-list.js';
 import {
   renderCookiePolicyRoute,
+  renderHomeRoute,
   renderPrivacyRoute,
   renderTermsRoute,
 } from './pages';
+import { renderGameDetailRoute } from './pages/game-detail.js';
 import showRequestGameForm from './request-game/request-game.js';
 import { filteredGames, handleSearchInputGame } from './search/search.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-  renderGameList(GAME_LIST); //초기 게임 리스트 렌더링
-  setupEventListeners();
-  setUpRouteEventListeners();
+  renderHomeRoute();
+  setupHistoryEventListeners();
 });
 
-//이미 html에 존재하는 요소들에 이벤트 리스너 설정
-function setupEventListeners() {
-  const replyNewGameBtn = document.getElementById('request_game_button');
-  if (replyNewGameBtn) {
-    replyNewGameBtn.addEventListener('click', () => {
-      showRequestGameForm();
-    });
-  }
+function setupHistoryEventListeners() {
+  window.addEventListener('popstate', function (event) {
+    const path = window.location.pathname;
+    const searchParams = window.location.search;
 
-  const searchBtn = document.getElementById('search_button');
-  if (searchBtn) {
-    searchBtn.addEventListener('click', () => {
-      handleSearchInputGame();
-    });
-  }
-
-  const searchInput = document.getElementById('game_search_input');
-  if (searchInput) {
-    searchInput.addEventListener('keypress', function (e) {
-      if (e.key === 'Enter') {
-        handleSearchInputGame();
-      }
-    });
-  }
-  const playerFilter = document.getElementById('player-filter');
-  if (playerFilter) {
-    playerFilter.addEventListener('change', () => {
-      filteredGames();
-    });
-  }
-  const difficultyFilter = document.getElementById('difficulty-filter');
-  if (difficultyFilter) {
-    difficultyFilter.addEventListener('change', () => {
-      filteredGames();
-    });
-  }
-}
-function setUpRouteEventListeners() {
-  const renderPrivacy = document.getElementById('footer_privacy_route');
-  if (renderPrivacy) {
-    renderPrivacy.addEventListener('click', () => {
-      renderPrivacyRoute();
-    });
-  }
-  const renderTerms = document.getElementById('footer_terms_route');
-  if (renderTerms) {
-    renderTerms.addEventListener('click', () => {
-      renderTermsRoute();
-    });
-  }
-  const renderCookiePolicy = document.getElementById(
-    'footer_cookie_policy_route'
-  );
-  if (renderCookiePolicy) {
-    renderCookiePolicy.addEventListener('click', () => {
-      renderCookiePolicyRoute();
-    });
-  }
+    switch (path) {
+      case '/':
+        renderHomeRoute();
+        return;
+      case '/game-rule':
+        if (searchParams) {
+          const gameId = parseInt(searchParams.substring(1));
+          if (gameId) {
+            renderGameDetailRoute(gameId);
+          }
+        }
+        return;
+      case '/privacy':
+        renderPrivacyRoute();
+        return;
+      case '/terms':
+        renderTermsRoute();
+        return;
+      case '/cookie-policy':
+        renderCookiePolicyRoute();
+        return;
+      default:
+        return;
+    }
+  });
 }

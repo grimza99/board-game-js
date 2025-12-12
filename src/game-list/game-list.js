@@ -38,7 +38,7 @@ export function createGameCard(game) {
     <img src="${game.image}" alt="${game.name}" class="game_image"/>
   `;
   card.addEventListener('click', () => {
-    renderGameDetailRoute(game.id, game.name);
+    renderGameDetailRoute(game.id);
   });
   return card;
 }

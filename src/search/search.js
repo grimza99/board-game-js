@@ -19,7 +19,7 @@ function createSearchResultItem(game) {
   `;
   //클릭시 상세 페이지로 이동
   li.addEventListener('click', () => {
-    renderGameDetailRoute(game.id, game.name);
+    renderGameDetailRoute(game.id);
   });
   return li;
 }
