@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function setupCommonEventListeners() {
+  const headerTitle = document.getElementById('header_title');
+  if (headerTitle) {
+    headerTitle.addEventListener('click', () => {
+      renderHomeRoute();
+    });
+  }
+
   const renderPrivacy = document.getElementById('footer_privacy_route');
   if (renderPrivacy) {
     renderPrivacy.addEventListener('click', () => {
