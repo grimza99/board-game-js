@@ -536,6 +536,102 @@ const GAME_LIST = [
     description:
       '카리브해를 항해하며 탐험·전투·거래를 수행하는 중후한 엔진 빌딩 게임입니다',
   },
+  {
+    id: 55,
+    name: '스카이팀 (Sky Team)',
+    players: '2',
+    playtime: '20',
+    difficulty: '중간',
+    image: 'public/game-image/main/55-SkyTeam.jpeg',
+    description:
+      '두 명이 협력하여 비행기를 안전하게 착륙시키는 완전 협력형 다이스 게임입니다',
+  },
+  {
+    id: 56,
+    name: '스시 고 파티 (Sushi Go Party!)',
+    players: '2-7',
+    playtime: '20',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/56-SushiGoParty.jpeg',
+    description:
+      '다양한 스시 카드를 드래프트하며 점수를 얻는 파티형 카드 게임입니다',
+  },
+  {
+    id: 57,
+    name: '카르카손 (Carcassonne)',
+    players: '2-5',
+    playtime: '40',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/57-Carcassonne.jpeg',
+    description:
+      '타일을 이어 도시와 길을 만들고 미플을 배치해 점수를 얻는 타일 배치 게임입니다',
+  },
+  {
+    id: 58,
+    name: '스톤에이지 (Stone Age)',
+    players: '2-4',
+    playtime: '60',
+    difficulty: '중간',
+    image: 'public/game-image/main/58-StoneAge.jpeg',
+    description:
+      '선사 시대 부족을 운영하며 자원을 모아 문명을 발전시키는 일꾼 놓기 게임입니다',
+  },
+  {
+    id: 59,
+    name: '레일로드 잉크 (Railroad Ink)',
+    players: '2-6',
+    playtime: '30',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/59-RailroadInk.jpeg',
+    description: '주사위로 도로와 철도를 연결하는 롤앤라이트 퍼즐 게임입니다',
+  },
+  {
+    id: 60,
+    name: '서머너 워즈 (Summoner Wars)',
+    players: '2',
+    playtime: '40',
+    difficulty: '중간',
+    image: 'public/game-image/main/60-SummonerWars.jpeg',
+    description:
+      '소환사와 유닛을 조종해 상대 본진을 파괴하는 전술 카드 게임입니다',
+  },
+  {
+    id: 61,
+    name: '패치워크 (Patchwork)',
+    players: '2',
+    playtime: '30',
+    difficulty: '쉬움',
+    image: 'public/game-image/main/61-Patchwork.jpeg',
+    description: '두 명이 천 조각을 사서 개인 보드에 배치하는 퍼즐 게임입니다',
+  },
+  {
+    id: 62,
+    name: '오딘을 위하여 (A Feast for Odin)',
+    players: '1-4',
+    playtime: '150',
+    difficulty: '어려움',
+    image: 'public/game-image/main/62-AFeastForOdin.jpeg',
+    description:
+      '바이킹이 되어 사냥, 탐험, 무역으로 자원을 채우는 대형 유로 게임입니다',
+  },
+  {
+    id: 63,
+    name: '블러드 레이지 (Blood Rage)',
+    players: '2-4',
+    playtime: '90',
+    difficulty: '중간',
+    image: 'public/game-image/main/63-BloodRage.jpeg',
+    description: '북유럽 신화를 배경으로 한 전투 중심 영역 장악 게임입니다',
+  },
+  {
+    id: 64,
+    name: '트라야누스 (Trajan)',
+    players: '2-4',
+    playtime: '120',
+    difficulty: '어려움',
+    image: 'public/game-image/main/64-Trajan.jpeg',
+    description: '만칼라 시스템을 활용한 다중 미니게임 전략 유로 게임입니다',
+  },
 ];
 
 export default GAME_LIST;

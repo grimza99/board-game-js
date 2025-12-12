@@ -1,6 +1,7 @@
 import * as G1 from './game-rules-1/index.js';
 import * as G2 from './game-rules-2/index.js';
 import * as G3 from './game-rules-3/index.js';
+import * as G4 from './game-rules-4/index.js';
 export const GAME_DETAIL_MAP = new Map();
 
 GAME_DETAIL_MAP.set(1, G1.CATAN); //카탄의 개척자들(Catan)
@@ -59,3 +60,14 @@ GAME_DETAIL_MAP.set(51, G3.HADRIANS_WALL); //해드리안스 월(Hadrian's Wall)
 GAME_DETAIL_MAP.set(52, G3.PALADINS_OF_THE_WEST); //팔라딘 오브 더 웨스트 킹덤(Paladins of the West Kingdom)
 GAME_DETAIL_MAP.set(53, G3.LISBOA); //리스보아(Lisboa)
 GAME_DETAIL_MAP.set(54, G3.MARACAIBO); //마라카이보(Maracaibo)
+GAME_DETAIL_MAP.set(55, G3.SKY_TEAM); //스카이팀
+GAME_DETAIL_MAP.set(56, G3.SUSHI_GO_PARTY); //스시고파티
+GAME_DETAIL_MAP.set(57, G3.CARCASSONNE); //카르카손
+GAME_DETAIL_MAP.set(58, G3.STONE_AGE); //스톤에이지
+GAME_DETAIL_MAP.set(59, G3.RAIL_ROAD_INK); //레일로드잉크
+GAME_DETAIL_MAP.set(60, G3.SUMMONER_WARS); //서머너 워즈
+
+GAME_DETAIL_MAP.set(61, G4.PATCHWORK); //패치워크
+GAME_DETAIL_MAP.set(62, G4.A_FEAST_FOR_ODIN); //오딘을위하여
+GAME_DETAIL_MAP.set(63, G4.BLOOD_RAGE); //블러드 레이지
+GAME_DETAIL_MAP.set(64, G4.TRANJAN); //트라야누스
