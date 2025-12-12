@@ -103,25 +103,6 @@ export function renderHomeRoute(pushHistory = true) {
       filteredGames();
     });
   }
-  const renderPrivacy = document.getElementById('footer_privacy_route');
-  if (renderPrivacy) {
-    renderPrivacy.addEventListener('click', () => {
-      renderPrivacyRoute();
-    });
-  }
-  const renderTerms = document.getElementById('footer_terms_route');
-  if (renderTerms) {
-    renderTerms.addEventListener('click', () => {
-      renderTermsRoute();
-    });
-  }
-  const renderCookiePolicy = document.getElementById(
-    'footer_cookie_policy_route'
-  );
-  if (renderCookiePolicy) {
-    renderCookiePolicy.addEventListener('click', () => {
-      renderCookiePolicyRoute();
-    });
-  }
+
   renderGameList(GAME_LIST);
 }
