@@ -1,11 +1,14 @@
 import { EL_ID } from '../constants/el-id';
 
-export function renderPrivacyRoute() {
+export function renderPrivacyRoute(pushHistory = true) {
   document.title = '개인정보처리방침 | 보드게임위키';
   const main = document.getElementById(EL_ID.MAIN);
   if (!main) return;
-  const path = `./privacy`;
-  window.history.pushState({}, '', path);
+
+  if (pushHistory) {
+    const path = `./privacy`;
+    window.history.pushState({}, '', path);
+  }
 
   const html = String.raw;
   main.innerHTML = '';

@@ -1,11 +1,14 @@
 import { EL_ID } from '../constants/el-id';
 
-export function renderTermsRoute() {
+export function renderTermsRoute(pushHistory = true) {
   document.title = '이용약관 | 보드게임위키';
   const main = document.getElementById(EL_ID.MAIN);
   if (!main) return;
-  const path = `./terms`;
-  window.history.pushState({}, '', path);
+
+  if (pushHistory) {
+    const path = `./terms`;
+    window.history.pushState({}, '', path);
+  }
 
   const html = String.raw;
   main.innerHTML = '';

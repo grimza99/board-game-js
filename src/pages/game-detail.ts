@@ -1,14 +1,18 @@
-import { GAME_DETAIL_MAP } from "./game-rules/index.js";
+import { GAME_DETAIL_MAP } from '../game-rules/index.js';
 
-export function showGameDetail(gameId, gameName) {
-  const relativePath = `./game-rule?${gameId}`;
-  window.history.pushState({ gameId: gameId }, gameName, relativePath);
-  const main = document.getElementById("main-content");
+export function renderGameDetailRoute(gameId: number, pushHistory = true) {
+  if (pushHistory) {
+    const relativePath = `./game-rule?${gameId}`;
+    window.history.pushState({ gameId: gameId }, '', relativePath);
+  }
+
+  const main = document.getElementById('main-content');
   if (!main) return;
 
   const { title, info, image, rule, video } = GAME_DETAIL_MAP.get(gameId) || {};
-  main.innerHTML = "";
-  main.innerHTML = `
+  const html = String.raw;
+  main.innerHTML = html`
+  <button id='to_go_game_list_btn'><img src='/public/icons/left.arrow.long.icon.svg' alt='back_to_game_list_icon'/>게임 리스트로 가기</button>
     <section id="detail-game-section">
       <div id="detail-game-image-title">
         <h2 id="detail-game-title">${title}</h2>
@@ -58,4 +62,8 @@ export function showGameDetail(gameId, gameName) {
       </div>
     </section>
   `;
+  const backButton = document.getElementById('to_go_game_list_btn');
+  backButton!.onclick = () => {
+    window.history.back();
+  };
 }
