@@ -1,5 +1,5 @@
 import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
-import { showGameDetail } from '../gameDetail.js';
+import { renderGameDetailRoute } from '../pages';
 import GAME_LIST from './game-list-Item.js';
 import renderPagination from './pagination.ts';
 
@@ -38,7 +38,7 @@ export function createGameCard(game) {
     <img src="${game.image}" alt="${game.name}" class="game_image"/>
   `;
   card.addEventListener('click', () => {
-    showGameDetail(game.id, game.name);
+    renderGameDetailRoute(game.id, game.name);
   });
   return card;
 }

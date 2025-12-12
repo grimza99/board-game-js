@@ -1,13 +1,13 @@
-import { GAME_DETAIL_MAP } from "./game-rules/index.js";
+import { GAME_DETAIL_MAP } from '../game-rules/index.js';
 
-export function showGameDetail(gameId, gameName) {
+export function renderGameDetailRoute(gameId: number, gameName: string) {
   const relativePath = `./game-rule?${gameId}`;
   window.history.pushState({ gameId: gameId }, gameName, relativePath);
-  const main = document.getElementById("main-content");
+  const main = document.getElementById('main-content');
   if (!main) return;
 
   const { title, info, image, rule, video } = GAME_DETAIL_MAP.get(gameId) || {};
-  main.innerHTML = "";
+  main.innerHTML = '';
   main.innerHTML = `
     <section id="detail-game-section">
       <div id="detail-game-image-title">

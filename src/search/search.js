@@ -1,4 +1,4 @@
-import { showGameDetail } from '../gameDetail.js';
+import { renderGameDetailRoute } from '../pages/game-detail.ts';
 import { renderGameList } from '../game-list/game-list.js';
 import GAME_LIST from '../game-list/game-list-Item.js';
 
@@ -19,7 +19,7 @@ function createSearchResultItem(game) {
   `;
   //클릭시 상세 페이지로 이동
   li.addEventListener('click', () => {
-    showGameDetail(game.id, game.name);
+    renderGameDetailRoute(game.id, game.name);
   });
   return li;
 }
