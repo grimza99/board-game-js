@@ -2,9 +2,6 @@ import { renderGameList } from '../game-list/game-list';
 import GAME_LIST from '../game-list/game-list-Item';
 import showRequestGameForm from '../request-game/request-game';
 import { filteredGames, handleSearchInputGame } from '../search/search';
-import { renderCookiePolicyRoute } from './cookie-policy';
-import { renderPrivacyRoute } from './privacy';
-import { renderTermsRoute } from './terms';
 
 export function renderHomeRoute(pushHistory = true) {
   if (pushHistory) {
