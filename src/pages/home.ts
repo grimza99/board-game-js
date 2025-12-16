@@ -1,7 +1,7 @@
 import PATH from '../constants/path';
 import { renderGameList } from '../game-list/game-list';
 import GAME_LIST from '../game-list/game-list-Item';
-import showRequestGameForm from '../request-game/request-game';
+import showModal from '../modal/modal';
 import { filteredGames, handleSearchInputGame } from '../search/search';
 
 export function renderHomeRoute(pushHistory = true, page: number = 1) {
@@ -64,13 +64,12 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
       <div id="game_list"></div>
       <div id="pagination_container"></div>
     </section>
-    <div id="request_game_form_modal"></div>
   `;
 
-  const replyNewGameBtn = document.getElementById('request_game_button');
-  if (replyNewGameBtn) {
-    replyNewGameBtn.addEventListener('click', () => {
-      showRequestGameForm();
+  const requestGameButton = document.getElementById('request_game_button');
+  if (requestGameButton) {
+    requestGameButton.addEventListener('click', () => {
+      showModal('request_game_form');
     });
   }
 

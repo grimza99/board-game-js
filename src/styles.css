@@ -91,6 +91,9 @@ main {
   margin-bottom: 12px;
 }
 
+body {
+  position: relative;
+}
 /* ------------------------------------------------ */
 /* 타블렛 */
 @media (max-width: 1024px) {
