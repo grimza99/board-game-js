@@ -1,5 +1,6 @@
 import PATH from '../constants/path.js';
 import { GAME_DETAIL_MAP } from '../game-rules/index.js';
+import showRequestEditRuleForm from '../request-edit-rule/request-edit-rule.js';
 
 export function renderGameDetailRoute(gameId: number, pushHistory = true) {
   if (pushHistory) {
@@ -62,9 +63,19 @@ export function renderGameDetailRoute(gameId: number, pushHistory = true) {
         </iframe>
       </div>
     </section>
+    <button id='request_edit_rule_button'>수정 요청</button>
+    <div id='request_edit_rule_modal'></div>
   `;
   const backButton = document.getElementById('to_go_game_list_btn');
   backButton!.onclick = () => {
     window.history.back();
   };
+  const requestEditRuleBtn = document.getElementById(
+    'request_edit_rule_button'
+  );
+  if (requestEditRuleBtn) {
+    requestEditRuleBtn.addEventListener('click', () => {
+      showRequestEditRuleForm();
+    });
+  }
 }
