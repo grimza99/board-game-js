@@ -1,7 +1,7 @@
 import PATH from '../constants/path';
 import { renderGameList } from '../game-list/game-list';
 import GAME_LIST from '../game-list/game-list-Item';
-import showRequestGameForm from '../request-game/request-game';
+import showModal from '../modal/modal';
 import { filteredGames, handleSearchInputGame } from '../search/search';
 
 export function renderHomeRoute(pushHistory = true, page: number = 1) {
@@ -12,7 +12,8 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
 
   if (!main) return;
 
-  main.innerHTML = `
+  const html = String.raw;
+  main.innerHTML = html`
     <!-- 검색, 필터 섹션 -->
     <section>
       <div class="search-section">
@@ -30,7 +31,7 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
     <section id="filter_and_request_section">
       <button id="request_game_button">
         <img
-          id="request-game-icon"
+          class="send_icon"
           src="/public/icons/send.icon.svg"
           alt="새 게임 요청 아이콘"
         />
@@ -64,13 +65,12 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
       <div id="game_list"></div>
       <div id="pagination_container"></div>
     </section>
-    <div id="request_game_form_modal"></div>
   `;
 
-  const replyNewGameBtn = document.getElementById('request_game_button');
-  if (replyNewGameBtn) {
-    replyNewGameBtn.addEventListener('click', () => {
-      showRequestGameForm();
+  const requestGameButton = document.getElementById('request_game_button');
+  if (requestGameButton) {
+    requestGameButton.addEventListener('click', () => {
+      showModal('request_game_form');
     });
   }
 
