@@ -4,6 +4,12 @@ import GAME_LIST from './game-list-Item.js';
 import renderPagination from './pagination.ts';
 
 export function renderGameList(gameList = GAME_LIST, currentPage = 1) {
+  const urlParams = new URLSearchParams(window.location.search);
+  urlParams.set('page', currentPage.toString());
+
+  const newUrl = window.location.pathname + '?' + urlParams.toString();
+  window.history.pushState({ page: currentPage }, '', newUrl);
+
   const gameListElement = document.getElementById('game_list');
   if (!gameListElement) return;
 
