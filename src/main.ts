@@ -5,9 +5,10 @@ import {
   renderTermsRoute,
 } from './pages/index.js';
 import { renderGameDetailRoute } from './pages/game-detail.js';
+import PATH from './constants/path.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-  renderHomeRoute();
+  renderHomeRoute(true, 1); // 초기 페이지 로드 시 1페이지 렌더링
   setupHistoryEventListeners();
   setupCommonEventListeners();
 });
@@ -16,7 +17,7 @@ function setupCommonEventListeners() {
   const headerTitle = document.getElementById('header_title');
   if (headerTitle) {
     headerTitle.addEventListener('click', () => {
-      renderHomeRoute();
+      renderHomeRoute(true, 1); //title 클릭 시 1페이지로 이동
     });
   }
 
@@ -46,10 +47,12 @@ function setupHistoryEventListeners() {
     const path = window.location.pathname;
     const searchParams = window.location.search;
     switch (path) {
-      case '/':
-        renderHomeRoute(false);
+      case PATH.HOME:
+        const pageParam = new URLSearchParams(searchParams).get('page');
+        const page = pageParam ? parseInt(pageParam) : 1;
+        renderHomeRoute(false, page);
         return;
-      case '/game-rule':
+      case PATH.GAME_DETAIL:
         if (searchParams) {
           const gameId = parseInt(searchParams.substring(1));
           if (gameId) {
@@ -57,13 +60,13 @@ function setupHistoryEventListeners() {
           }
         }
         return;
-      case '/privacy':
+      case PATH.PRIVACY:
         renderPrivacyRoute(false);
         return;
-      case '/terms':
+      case PATH.TERMS:
         renderTermsRoute(false);
         return;
-      case '/cookie-policy':
+      case PATH.COOKIE_POLICY:
         renderCookiePolicyRoute(false);
         return;
       default:

@@ -1,11 +1,12 @@
+import PATH from '../constants/path';
 import { renderGameList } from '../game-list/game-list';
 import GAME_LIST from '../game-list/game-list-Item';
 import showRequestGameForm from '../request-game/request-game';
 import { filteredGames, handleSearchInputGame } from '../search/search';
 
-export function renderHomeRoute(pushHistory = true) {
+export function renderHomeRoute(pushHistory = true, page: number = 1) {
   if (pushHistory) {
-    window.history.pushState({}, '', '/');
+    window.history.pushState({ page: page }, '', `${PATH.HOME}?page=${page}`);
   }
   const main = document.getElementById('main-content');
 
@@ -101,5 +102,5 @@ export function renderHomeRoute(pushHistory = true) {
     });
   }
 
-  renderGameList(GAME_LIST);
+  renderGameList(GAME_LIST, page);
 }
