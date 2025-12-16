@@ -63,7 +63,14 @@ export function renderGameDetailRoute(gameId: number, pushHistory = true) {
         </iframe>
       </div>
     </section>
-    <button id='request_edit_rule_button'>수정 요청</button>
+    <button id="request_edit_rule_button">
+        <img
+          class="send_icon"
+          src="/public/icons/send.icon.white.svg"
+          alt="룰 수정 요청 버튼 아이콘"
+        />
+        <span>룰 수정 요청</span>
+    </button>
   `;
   const backButton = document.getElementById('to_go_game_list_btn');
   backButton!.onclick = () => {

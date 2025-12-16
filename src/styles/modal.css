@@ -17,19 +17,22 @@
 /*게임 룰 수정 요청 모달 버튼*/
 #request_edit_rule_button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
+  bottom: 30px;
+  right: 30px;
+  font-size: 16px;
+  border: 1px solid var(--primary);
   color: white;
-  border: none;
   border-radius: 999px;
-  cursor: pointer;
+  padding: 6px 10px;
+  background-color: var(--primary);
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 /* -------------------------------------------- */
 /*모달 공통 스타일*/
-#request-game-icon {
+.send_icon {
   width: 16px;
   height: 16px;
   vertical-align: middle;

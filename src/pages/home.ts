@@ -12,7 +12,8 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
 
   if (!main) return;
 
-  main.innerHTML = `
+  const html = String.raw;
+  main.innerHTML = html`
     <!-- 검색, 필터 섹션 -->
     <section>
       <div class="search-section">
@@ -30,7 +31,7 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
     <section id="filter_and_request_section">
       <button id="request_game_button">
         <img
-          id="request-game-icon"
+          class="send_icon"
           src="/public/icons/send.icon.svg"
           alt="새 게임 요청 아이콘"
         />
