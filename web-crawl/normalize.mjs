@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { readRawText, toFileName } from './utils/util.mjs';
+import { DIR } from './constants.mjs';
 
 function buildNormalizedJson({ gameId, gameName, url }) {
   const rawText = readRawText(gameId, gameName);
@@ -28,7 +29,7 @@ export function saveNormalizedJson({ gameId, gameName, url }) {
   console.log(`\nNORMALIZED-START : ${gameName}`);
 
   const data = buildNormalizedJson({ gameId, gameName, url });
-  const outDir = path.resolve('normalized');
+  const outDir = path.resolve(DIR.NORMALIZED);
   if (!fs.existsSync(outDir)) {
     fs.mkdirSync(outDir);
   }
