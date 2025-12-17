@@ -20,6 +20,7 @@ async function runProcess() {
     const gameId = await ask(rl, 'Game ID: ');
     const gameName = await ask(rl, 'Game Name: ');
     const url = await ask(rl, 'Game URL: ');
+    const videoUrl = await ask(rl, 'Game Rule Video URL: ');
 
     if (!gameId || !gameName || !url) {
       console.error('\n❌ 모든 값을 입력해야 합니다.');
@@ -31,6 +32,7 @@ async function runProcess() {
       gameId: Number(gameId),
       gameName,
       url,
+      videoUrl,
     };
 
     console.log(

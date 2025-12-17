@@ -33,8 +33,25 @@ async function downloadImage({ gameId, gameName, pageUrl, src }) {
 
   fs.writeFileSync(filePath, res.data);
 }
+function saveEmbeddedStr({ videoUrl, gameId, gameName }) {
+  console.log(`\nVIDEO_CRAWL : ${gameName}`);
+  console.log(`URL: ${videoUrl}`);
+  const embeddedStr =
+    videoUrl.match(/(?:v=|\/)([0-9A-Za-z_-]{11})(?:\?|&|$)/)[1] || null;
 
-export async function crawlAndSave({ gameId, gameName, url }) {
+  if (!embeddedStr) {
+    console.warn(`\n[WARN]${gameName}-VIDEO`);
+    console.warn(`비디오 ID를 추출할 수 없습니다.`);
+    return;
+  }
+
+  const videoDir = path.resolve(DIR.CRAWL_RAWS);
+  const fileName = toFileName(gameId, gameName);
+  const filePath = path.join(videoDir, `${fileName}-embedded.txt`);
+  fs.writeFileSync(filePath, embeddedStr);
+}
+
+export async function crawlAndSave({ gameId, gameName, url, videoUrl }) {
   console.log(`\nCRAWL : ${gameName}`);
   console.log(`URL: ${url}`);
 
@@ -49,7 +66,6 @@ export async function crawlAndSave({ gameId, gameName, url }) {
   const $ = cheerio.load(res.data);
   const rawText = cleanText($('body #main').first().text());
   const img = $('.post-thumbnail').children('img').attr('src') || '';
-
   if (rawText.length < 1000) {
     console.warn(` [WARN] ${gameName}`);
     console.warn(` 텍스트 너무 짧음 (${rawText.length} chars)`);
@@ -66,6 +82,7 @@ export async function crawlAndSave({ gameId, gameName, url }) {
     pageUrl: url,
     src: img,
   });
+  saveEmbeddedStr({ videoUrl, gameId, gameName });
 
   const fileName = toFileName(gameId, gameName);
   const filePath = path.join(rawDir, `${fileName}.txt`);
