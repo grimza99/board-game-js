@@ -18,7 +18,7 @@ export function renderGameDetailRoute(gameId: number, pushHistory = true) {
     <section id="detail-game-section">
       <div id="detail-game-image-title">
         <h2 id="detail-game-title">${title}</h2>
-        <img id="detail-game-image" src="${image}" alt="${title}"/>
+        <img id="detail-game-image" src="/${image}" alt="${title}"/>
       </div>
       <div class="detail-game-info-card">
         <div class="detail-info-item">
