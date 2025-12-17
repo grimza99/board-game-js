@@ -1,8 +1,10 @@
+import PATH from '../constants/path.js';
 import { GAME_DETAIL_MAP } from '../game-rules/index.js';
+import showModal from '../modal/modal.js';
 
 export function renderGameDetailRoute(gameId: number, pushHistory = true) {
   if (pushHistory) {
-    const relativePath = `./game-rule?${gameId}`;
+    const relativePath = `${PATH.GAME_DETAIL}?gameId=${gameId}`;
     window.history.pushState({ gameId: gameId }, '', relativePath);
   }
 
@@ -61,9 +63,25 @@ export function renderGameDetailRoute(gameId: number, pushHistory = true) {
         </iframe>
       </div>
     </section>
+    <button id="request_edit_rule_button">
+        <img
+          class="send_icon"
+          src="/public/icons/send.icon.white.svg"
+          alt="룰 수정 요청 버튼 아이콘"
+        />
+        <span>룰 수정 요청</span>
+    </button>
   `;
   const backButton = document.getElementById('to_go_game_list_btn');
   backButton!.onclick = () => {
     window.history.back();
   };
+  const requestEditRuleBtn = document.getElementById(
+    'request_edit_rule_button'
+  );
+  if (requestEditRuleBtn) {
+    requestEditRuleBtn.addEventListener('click', () => {
+      showModal('request_edit_rule_form');
+    });
+  }
 }
