@@ -5,12 +5,14 @@ import { DIR } from './constants.mjs';
 
 function buildNormalizedJson({ gameId, gameName, url }) {
   const rawText = readRawText(gameId, gameName);
+  const videoEmbedded = readRawText(gameId, gameName, true);
 
   return {
     gameId,
     gameName,
     source: {
       url,
+      videoEmbedded,
       type: 'rule-page',
     },
     content: {

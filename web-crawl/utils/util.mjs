@@ -23,8 +23,9 @@ function resolveImageUrl(pageUrl, src) {
   if (src.startsWith('http')) return src;
   return new URL(src, pageUrl).href;
 }
-function readRawText(gameId, gameName) {
-  const fileName = toFileName(gameId, gameName) + '.txt';
+function readRawText(gameId, gameName, isEmbedded = false) {
+  const fileName =
+    toFileName(gameId, gameName) + isEmbedded ? '-embedded' : null + '.txt';
   const filePath = path.resolve(DIR.CRAWL_RAWS, fileName);
   if (!fs.existsSync(filePath)) {
     throw new Error(`raw text 파일이 없습니다.- ${filePath}`);
