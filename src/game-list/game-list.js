@@ -1,18 +1,17 @@
 import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
 import { renderGameDetailRoute } from '../pages/index.ts';
 import { filteredGames } from '../search/search.js';
-import GAME_LIST from './game-list-Item.js';
 import renderPagination from './pagination.ts';
 
-export function renderGameList(currentPage = 1) {
+export function renderGameList(currentPage = 1, player, difficulty) {
   const playerFilter = document.getElementById('player-filter-options');
   const difficultyFilter = document.getElementById('difficulty-filter-options');
   const gameListElement = document.getElementById('game_list');
 
-  if (!gameListElement && !playerFilter && !difficultyFilter) return;
+  if (!playerFilter && !difficultyFilter) return;
 
-  const selectedPlayer = playerFilter.value;
-  const selectedDifficulty = difficultyFilter.value;
+  const selectedPlayer = player || playerFilter?.value || 'all';
+  const selectedDifficulty = difficulty || difficultyFilter?.value || 'all';
 
   const gameList = filteredGames(selectedPlayer, selectedDifficulty);
 
@@ -25,7 +24,8 @@ export function renderGameList(currentPage = 1) {
   const newUrl = window.location.pathname + '?' + searchParams.toString();
   window.history.pushState(
     {
-      filterBy: { players: selectedPlayer, difficulty: selectedDifficulty },
+      player: selectedPlayer,
+      difficulty: selectedDifficulty,
       page: currentPage,
     },
     '',
@@ -36,6 +36,7 @@ export function renderGameList(currentPage = 1) {
   const endIndex = startIndex + GAMES_LIST_PAGE_SIZE;
   const paginatedGames = gameList.slice(startIndex, endIndex);
 
+  if (!gameListElement) return;
   gameListElement.innerHTML = '';
   paginatedGames.forEach((game) => {
     const gameCard = createGameCard(game);

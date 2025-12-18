@@ -6,6 +6,7 @@ import {
 } from './pages/index.js';
 import { renderGameDetailRoute } from './pages/game-detail.js';
 import PATH from './constants/path.js';
+import { restoreFilterValues } from './features/filter/restoreFilterValues.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderHomeRoute(true, 1); // 초기 페이지 로드 시 1페이지 렌더링
@@ -45,18 +46,22 @@ function setupCommonEventListeners() {
 function setupHistoryEventListeners() {
   window.addEventListener('popstate', function () {
     const path = window.location.pathname;
-    const searchParams = window.location.search;
+    const searchParams = new URLSearchParams(window.location.search);
     switch (path) {
       case PATH.HOME:
-        const pageParam = new URLSearchParams(searchParams).get('page');
+        const pageParam = searchParams.get('page');
+        const player = searchParams.get('player') || 'all';
+        const difficulty = searchParams.get('difficulty') || 'all';
         const page = pageParam ? parseInt(pageParam) : 1;
-        renderHomeRoute(false, page);
+        renderHomeRoute(false, page, player, difficulty);
+        restoreFilterValues(player, difficulty);
+
         return;
       case PATH.GAME_DETAIL:
-        if (searchParams) {
-          const gameId = parseInt(searchParams.substring(1));
+        {
+          const gameId = searchParams.get('gameId');
           if (gameId) {
-            renderGameDetailRoute(gameId, false);
+            renderGameDetailRoute(Number(gameId), false);
           }
         }
         return;

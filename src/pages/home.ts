@@ -1,13 +1,13 @@
-import PATH from '../constants/path';
-import { renderGameList } from '../game-list/game-list';
-import GAME_LIST from '../game-list/game-list-Item';
-import showModal from '../modal/modal';
-import { handleSearchInputGame } from '../search/search';
+import PATH from '../constants/path.ts';
+import { renderGameList } from '../game-list/game-list.js';
+import showModal from '../modal/modal.ts';
+import { handleSearchInputGame } from '../search/search.js';
 
 export function renderHomeRoute(
   pushHistory = true,
   page: number = 1,
-  filterBy?: { players: string; difficulty: string }
+  player: string | null = null,
+  difficulty: string | null = null
 ) {
   if (pushHistory) {
     window.history.pushState({ page: page }, '', `${PATH.HOME}?page=${page}`);
@@ -106,5 +106,5 @@ export function renderHomeRoute(
     });
   }
 
-  renderGameList(page);
+  renderGameList(page, player, difficulty);
 }
