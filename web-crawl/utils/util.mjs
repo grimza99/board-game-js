@@ -2,13 +2,14 @@ import path from 'path';
 import fs from 'fs';
 import { DIR } from '../constants.mjs';
 
-function toFileName(gameId, gameName) {
+function toFileName(gameId, gameName, isEmbedded = false) {
+  const slug = isEmbedded ? '-embedded' : '';
   const formattedGameName = gameName
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 
-  return `${gameId}-${formattedGameName}`;
+  return `${gameId}-${formattedGameName}${slug}`;
 }
 
 function cleanText(text) {
@@ -24,9 +25,8 @@ function resolveImageUrl(pageUrl, src) {
   return new URL(src, pageUrl).href;
 }
 function readRawText(gameId, gameName, isEmbedded = false) {
-  const fileName =
-    toFileName(gameId, gameName) + isEmbedded ? '-embedded' : null + '.txt';
-  const filePath = path.resolve(DIR.CRAWL_RAWS, fileName);
+  const fileName = toFileName(gameId, gameName, isEmbedded);
+  const filePath = path.resolve(DIR.CRAWL_RAWS, fileName + '.txt');
   if (!fs.existsSync(filePath)) {
     throw new Error(`raw text 파일이 없습니다.- ${filePath}`);
   }
