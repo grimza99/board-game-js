@@ -55,16 +55,8 @@ export function handleSearchInputGame() {
 
 /**--------------플레이어수 & 난이도 필터링---------------*/
 
-export function filteredGames() {
-  const playerFilter = document.getElementById('player-filter-options');
-  const difficultyFilter = document.getElementById('difficulty-filter-options');
-  const gameListElement = document.getElementById('game_list');
-
-  if (!playerFilter || !gameListElement || !difficultyFilter) return;
-
+export function filteredGames(selectedPlayer, selectedDifficulty) {
   let filteredGames = [];
-  const selectedPlayer = playerFilter.value;
-  const selectedDifficulty = difficultyFilter.value;
 
   if (selectedPlayer === 'all') {
     filteredGames = GAME_LIST;
@@ -93,6 +85,5 @@ export function filteredGames() {
       return DIFFICULTY_MAP[selectedDifficulty] === game.difficulty;
     });
   }
-  gameListElement.innerHTML = '';
-  renderGameList(filteredGames);
+  return filteredGames;
 }

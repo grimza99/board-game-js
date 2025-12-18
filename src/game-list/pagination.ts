@@ -57,15 +57,15 @@ export default function renderPagination(
 /**페이지 네이션 이벤트 핸들러 */
 const handlePreviousPage = (currentPage: number) => {
   if (currentPage <= 1) return;
-  renderGameList(undefined, currentPage - 1);
+  renderGameList(currentPage - 1);
 };
 
 const handleNextPage = (currentPage: number, totalPage: number) => {
   if (currentPage >= totalPage) return;
-  renderGameList(undefined, currentPage + 1);
+  renderGameList(currentPage + 1);
 };
 
 const handlePageNumberClick = (pageNumber: number, totalPage: number) => {
   if (pageNumber > totalPage) return;
-  renderGameList(undefined, pageNumber);
+  renderGameList(pageNumber);
 };
