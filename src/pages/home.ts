@@ -2,7 +2,7 @@ import PATH from '../constants/path';
 import { renderGameList } from '../game-list/game-list';
 import GAME_LIST from '../game-list/game-list-Item';
 import showModal from '../modal/modal';
-import { filteredGames, handleSearchInputGame } from '../search/search';
+import { handleSearchInputGame } from '../search/search';
 
 export function renderHomeRoute(pushHistory = true, page: number = 1) {
   if (pushHistory) {
@@ -92,13 +92,13 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
   const playerFilter = document.getElementById('player-filter');
   if (playerFilter) {
     playerFilter.addEventListener('change', () => {
-      filteredGames();
+      renderGameList();
     });
   }
   const difficultyFilter = document.getElementById('difficulty-filter');
   if (difficultyFilter) {
     difficultyFilter.addEventListener('change', () => {
-      filteredGames();
+      renderGameList();
     });
   }
 
