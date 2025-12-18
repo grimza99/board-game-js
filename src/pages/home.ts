@@ -4,7 +4,11 @@ import GAME_LIST from '../game-list/game-list-Item';
 import showModal from '../modal/modal';
 import { handleSearchInputGame } from '../search/search';
 
-export function renderHomeRoute(pushHistory = true, page: number = 1) {
+export function renderHomeRoute(
+  pushHistory = true,
+  page: number = 1,
+  filterBy?: { players: string; difficulty: string }
+) {
   if (pushHistory) {
     window.history.pushState({ page: page }, '', `${PATH.HOME}?page=${page}`);
   }
@@ -102,5 +106,5 @@ export function renderHomeRoute(pushHistory = true, page: number = 1) {
     });
   }
 
-  renderGameList(GAME_LIST, page);
+  renderGameList(page);
 }

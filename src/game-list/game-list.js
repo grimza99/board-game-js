@@ -4,7 +4,7 @@ import { filteredGames } from '../search/search.js';
 import GAME_LIST from './game-list-Item.js';
 import renderPagination from './pagination.ts';
 
-export function renderGameList(gameList = GAME_LIST, currentPage = 1) {
+export function renderGameList(currentPage = 1) {
   const playerFilter = document.getElementById('player-filter-options');
   const difficultyFilter = document.getElementById('difficulty-filter-options');
   const gameListElement = document.getElementById('game_list');
@@ -14,7 +14,7 @@ export function renderGameList(gameList = GAME_LIST, currentPage = 1) {
   const selectedPlayer = playerFilter.value;
   const selectedDifficulty = difficultyFilter.value;
 
-  gameList = filteredGames(selectedPlayer, selectedDifficulty);
+  const gameList = filteredGames(selectedPlayer, selectedDifficulty);
 
   /**서치파람스 업데이트 , pushState */
   const searchParams = new URLSearchParams(window.location.search);
