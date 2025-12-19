@@ -632,6 +632,108 @@ export const GAME_LIST = [
     image: 'public/game-image/main/64-Trajan.jpeg',
     description: '만칼라 시스템을 활용한 다중 미니게임 전략 유로 게임입니다',
   },
+  {
+    id: 65,
+    name: '팬데믹 레거시: 시즌 1 (Pandemic Legacy: Season 1)',
+    players: '2-4',
+    playtime: 60,
+    difficulty: '중간',
+    image: '/public/game-image/crawl-images/65-pandemic-legacy-season-1.jpeg',
+    description:
+      '플레이어들이 협력하여 전염병을 연구하고 치료법을 찾아 인류를 구하는 협력 전략 보드게임입니다.',
+  },
+  {
+    id: 66,
+    name: '듄: 임페리움 (Dune: Imperium)',
+    players: '2-5',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/66-dune-imperium.jpeg',
+    description:
+      '각 진영의 고유한 경제, 군사, 전략적 능력을 활용해 듄 행성을 지배하는 덱빌딩과 전략 전투가 결합된 보드게임입니다.',
+  },
+  {
+    id: 67,
+    name: '아컴 호러: 카드 게임 (Arkham Horror: The Card Game)',
+    players: '1-6',
+    playtime: 120,
+    difficulty: '어려움',
+    image:
+      '/public/game-image/crawl-images/67-arkham-horror-the-card-game.jpeg',
+    description:
+      '플레이어들이 협력하여 차원문을 닫고 고대의 존재를 막아내는 협력형 공포 테마 카드 게임입니다.',
+  },
+  {
+    id: 68,
+    name: '네메시스 (Nemesis)',
+    players: '1-5',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/68-nemesis.jpeg',
+    description:
+      '우주선에 침입한 적대적 외계 생명체와 맞서 생존하며, 각자의 목표를 완수하고 지구로 무사히 귀환하는 반협력 전략 보드게임입니다.',
+  },
+  {
+    id: 69,
+    name: '이클립스 (Eclipse)',
+    players: '2-6',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/69-eclipse.jpeg',
+    description:
+      '우주 문명을 확장하며 기술을 연구하고 함선을 업그레이드해 전투와 탐험을 벌이는 전략 보드게임입니다.',
+  },
+  {
+    id: 70,
+    name: '마법 기사 보드게임 (Mage Knight Board Game)',
+    players: '1-4',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/70-mage-knight-board-game.jpeg',
+    description:
+      '플레이어가 마법 기사 영웅을 조종하여 덱빌딩과 탐험, 전투를 통해 명성을 쌓고 도시를 발견하는 전략 RPG 보드게임입니다.',
+  },
+  {
+    id: 71,
+    name: '아나크로니 (Anachrony)',
+    players: '1-4',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/71-anachrony.jpeg',
+    description:
+      '플레이어는 뉴 어스의 이념적 경로 중 하나의 리더가 되어, 다가오는 소행성 충돌에 대비하고 인류의 미래를 지배하는 이념이 되기 위해 경쟁하는 전략 게임입니다.',
+  },
+  {
+    id: 72,
+    name: "촐킨: 마야 달력 (Tzolk'in: The Mayan Calendar)",
+    players: '2-4',
+    playtime: 120,
+    difficulty: '어려움',
+    image:
+      '/public/game-image/crawl-images/72-tzolk-in-the-mayan-calendar.jpeg',
+    description:
+      '마야 달력의 기어 메커니즘을 활용해 노동자를 배치하고 자원을 관리하며 건물과 기념비를 건설하는 전략적 워커 플레이스먼트 게임입니다.',
+  },
+  {
+    id: 73,
+    name: '온 마스 (On Mars)',
+    players: '1-4',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/73-on-mars.jpeg',
+    description:
+      '화성 식민지 건설을 목표로, 자원 관리와 기술 개발, 건물 건설 및 임무 완수를 통해 가장 많은 기회를 쟁취하는 전략 게임입니다.',
+  },
+  {
+    id: 74,
+    name: '자이푸르 (Jaipur)',
+    players: '2',
+    playtime: 30,
+    difficulty: '중간',
+    image: '/public/game-image/crawl-images/74-jaipur.jpeg',
+    description:
+      '두 상인이 인도 시장에서 상품을 사고팔며 최고의 상인이 되기 위해 경쟁하는 카드 교환 및 세트 수집 전략 게임입니다.',
+  },
 ];
 
 export default GAME_LIST;
