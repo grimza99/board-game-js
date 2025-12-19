@@ -1,4 +1,4 @@
-const GAME_LIST = [
+export const GAME_LIST = [
   {
     id: 1,
     name: '카탄의 개척자들 (Catan)',

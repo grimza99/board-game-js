@@ -1,22 +1,42 @@
 import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
-import { renderGameDetailRoute } from '../pages';
-import GAME_LIST from './game-list-Item.js';
+import { renderGameDetailRoute } from '../pages/index.ts';
+import { filteredGames } from '../search/search.js';
 import renderPagination from './pagination.ts';
 
-export function renderGameList(gameList = GAME_LIST, currentPage = 1) {
-  const urlParams = new URLSearchParams(window.location.search);
-  urlParams.set('page', currentPage.toString());
-
-  const newUrl = window.location.pathname + '?' + urlParams.toString();
-  window.history.pushState({ page: currentPage }, '', newUrl);
-
+export function renderGameList(currentPage = 1, player, difficulty) {
+  const playerFilter = document.getElementById('player-filter-options');
+  const difficultyFilter = document.getElementById('difficulty-filter-options');
   const gameListElement = document.getElementById('game_list');
-  if (!gameListElement) return;
+
+  if (!playerFilter && !difficultyFilter) return;
+
+  const selectedPlayer = player || playerFilter?.value || 'all';
+  const selectedDifficulty = difficulty || difficultyFilter?.value || 'all';
+
+  const gameList = filteredGames(selectedPlayer, selectedDifficulty);
+
+  /**서치파람스 업데이트 , pushState */
+  const searchParams = new URLSearchParams(window.location.search);
+  searchParams.set('page', currentPage.toString());
+  searchParams.set('player', selectedPlayer.toString());
+  searchParams.set('difficulty', selectedDifficulty.toString());
+
+  const newUrl = window.location.pathname + '?' + searchParams.toString();
+  window.history.pushState(
+    {
+      player: selectedPlayer,
+      difficulty: selectedDifficulty,
+      page: currentPage,
+    },
+    '',
+    newUrl
+  );
 
   const startIndex = (currentPage - 1) * GAMES_LIST_PAGE_SIZE;
   const endIndex = startIndex + GAMES_LIST_PAGE_SIZE;
   const paginatedGames = gameList.slice(startIndex, endIndex);
 
+  if (!gameListElement) return;
   gameListElement.innerHTML = '';
   paginatedGames.forEach((game) => {
     const gameCard = createGameCard(game);
