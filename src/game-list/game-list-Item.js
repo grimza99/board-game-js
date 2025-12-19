@@ -173,7 +173,7 @@ export const GAME_LIST = [
     players: '2-4',
     playtime: '30',
     difficulty: '중간',
-    image: 'public/game-image/main/18-dominion.jpeg',
+    image: 'public/game-image/main/18-Dominion.jpeg',
     description:
       '덱 빌딩 카드 게임의 원조로, 다양한 카드를 조합해 자신의 덱을 강화하고 승점을 획득하는 전략 게임입니다.',
   },
@@ -193,7 +193,7 @@ export const GAME_LIST = [
     players: '2-5',
     playtime: '15',
     difficulty: '쉬움',
-    image: 'public/game-image/main/20-Qwixx.jpeg',
+    image: 'public/game-image/main/20-qwixx.jpeg',
     description:
       '주사위를 굴려 숫자 칸을 채우며 점수를 얻는 간단하고 빠른 주사위 게임입니다.',
   },
@@ -233,7 +233,7 @@ export const GAME_LIST = [
     players: '2',
     playtime: '30',
     difficulty: '중간',
-    image: 'public/game-image/main/24-Splendor-Duel.jpeg',
+    image: 'public/game-image/main/24-splendor-duel.jpeg',
     description:
       '스플렌더의 2인 전용 버전으로, 보석을 수집하고 카드를 구매하여 최고의 상인이 되는 전략 게임입니다.',
   },
