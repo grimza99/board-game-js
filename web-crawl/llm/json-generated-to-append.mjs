@@ -132,4 +132,3 @@ export function saveLLMOutputToFile({ gameId, gameName }) {
     gameId,
   });
 }
-saveLLMOutputToFile({ gameId: 33, gameName: 'rummikube' });

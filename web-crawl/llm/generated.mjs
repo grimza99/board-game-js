@@ -42,8 +42,3 @@ export async function generateJsonFromNormalized({ gameId, gameName }) {
 
   console.log(`[JSON GENERATED] ${outPath}`);
 }
-function main() {
-  const test = { gameId: 33, gameName: 'Rummikube' };
-  generateJsonFromNormalized({ gameId: test.gameId, gameName: test.gameName });
-}
-main();

@@ -1,4 +1,6 @@
 import { crawlAndSave } from './crawl-save.mjs';
+import { generateJsonFromNormalized } from './llm/generated.mjs';
+import { saveLLMOutputToFile } from './llm/json-generated-to-append.mjs';
 import { saveNormalizedJson } from './normalize.mjs';
 import readline from 'readline';
 
@@ -40,6 +42,8 @@ async function runProcess() {
     );
     await crawlAndSave(game);
     saveNormalizedJson(game);
+    await generateJsonFromNormalized({ gameId, gameName });
+    saveLLMOutputToFile(game);
     console.log(`\n=============== [DONE]: ${game.gameName} ===============`);
 
     const next = await ask(rl, '게임을 더 추가하나요? (y/n): ');
