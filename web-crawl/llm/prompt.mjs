@@ -43,7 +43,7 @@ description : 게임 소개 (1~2문장 요약) : 예) '목장을 운영하며 �
   ruleObject:{
     title: '한글로 변환된 게임 이름 (${gameName})',
     image: 'public/game-image/crawl-images/${fileName}.jpeg',
-    info:  GAME_LIST[${gameId - 1}],
+    info:  '__GAME_LIST[${gameId - 1}]__',
     rule: 위에서 작성한 게임 룰 규칙 HTML,
     video: '${videoEmbedded ?? ''}',
   }

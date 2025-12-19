@@ -11,6 +11,14 @@ function toFileName(gameId, gameName, isEmbedded = false) {
 
   return `${gameId}-${formattedGameName}${slug}`;
 }
+function toConstantName(gameName) {
+  const formattedGameName = gameName
+    .toUpperCase()
+    .replace(/[^A-Z0-9]+/g, '_')
+    .replace(/(^_|_$)/g, '');
+
+  return formattedGameName;
+}
 
 function cleanText(text) {
   return text
@@ -43,4 +51,20 @@ function selectImage(gameId, gameName) {
   return fs.readdirSync(imageDir).find((file) => file === `${prefix}.jpeg`);
 }
 
-export { toFileName, cleanText, resolveImageUrl, readRawText, selectImage };
+function stringifyWithExpressions(obj) {
+  let json = JSON.stringify(obj, null, 2);
+
+  json = json.replace(/"__(.*?)__"/g, (_, expr) => expr);
+
+  return json;
+}
+
+export {
+  toFileName,
+  cleanText,
+  resolveImageUrl,
+  readRawText,
+  selectImage,
+  toConstantName,
+  stringifyWithExpressions,
+};
