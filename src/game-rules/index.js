@@ -1,7 +1,7 @@
 import * as G1 from './game-rules-1/index.js';
 import * as G2 from './game-rules-2/index.js';
 import * as G3 from './game-rules-3/index.js';
-import * as G4 from './game-rules-4/index.js';
+import * as G4 from './game-rules-4/index.ts';
 export const GAME_DETAIL_MAP = new Map();
 
 GAME_DETAIL_MAP.set(1, G1.CATAN); //카탄의 개척자들(Catan)
