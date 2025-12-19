@@ -65,7 +65,7 @@ export function renderHomeRoute(
     </section>
 
     <!-- 게임 리스트 섹션 -->
-    <section>
+    <section id="game_list_pagination_container">
       <div id="game_list"></div>
       <div id="pagination_container"></div>
     </section>
