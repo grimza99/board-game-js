@@ -13,8 +13,6 @@ const __dirname = path.dirname(__filename);
 
 //game list item 객체에 llm-out json 객체의 summaryObject를 추가
 export function appendToJsArrayFile({ gameId, gameName }) {
-  console.log(`APPEND TO JS ARRAY FILE :${gameName}`);
-
   const targetPath = path.resolve(
     DIR.LLM_OUTPUT,
     toFileName(gameId, gameName) + '.json'
@@ -25,14 +23,14 @@ export function appendToJsArrayFile({ gameId, gameName }) {
 
   const indexPath = path.resolve(
     __dirname,
-    '../../src/game-list/game-list-item.js'
+    '../../src/game-list/game-list-Item.js'
   );
 
   let content = fs.readFileSync(indexPath, 'utf-8');
 
   const arrayStart = `export const GAME_LIST = [`;
   if (!content.includes(arrayStart)) {
-    throw new Error(`Export ${exportName} not found`);
+    throw new Error(`Export ${indexPath} not found`);
   }
 
   const arrayEndIndex = content.lastIndexOf('];');
@@ -49,12 +47,11 @@ export function appendToJsArrayFile({ gameId, gameName }) {
   const updated = before + objectString + '\n' + after;
 
   fs.writeFileSync(indexPath, updated, 'utf-8');
+  console.log(`APPENDED TO JS ARRAY FILE :${gameName}`);
 }
 
 /**ruleObject를 game-rules 폴더에 ts파일로 추가 */
 export function saveAsTsExport({ gameId, gameName }) {
-  console.log(`SAVE TS FILE :${gameName}`);
-
   const targetPath = path.resolve(
     DIR.LLM_OUTPUT,
     toFileName(gameId, gameName) + '.json'
@@ -75,12 +72,64 @@ export function saveAsTsExport({ gameId, gameName }) {
   export const ${variableName} = ${formattedObject} as const;\n`;
 
   fs.writeFileSync(outPath, tsContent, 'utf-8');
+  console.log(`CREATED TS FILE :${gameName}`);
+
+  return { outDir, variableName, fileName, slug };
 }
-function main() {
-  appendToJsArrayFile({ gameId: 33, gameName: 'Rummikube' });
-  saveAsTsExport({
-    gameId: 33,
-    gameName: 'Rummikube',
+
+export function saveMapAndIndexing({
+  outDir,
+  variableName,
+  fileName,
+  slug,
+  gameId,
+}) {
+  //indexing
+  const targetPath = path.resolve(outDir, 'index.ts');
+  if (!fs.existsSync(targetPath)) {
+    fs.writeFileSync(targetPath, '', 'utf-8');
+  }
+
+  let content = fs.readFileSync(targetPath, 'utf-8');
+
+  const addContent = `export {${variableName} }from './${fileName}'`;
+
+  content += `${addContent}\n`;
+  fs.writeFileSync(targetPath, content, 'utf-8');
+
+  //map 추가
+  const mapPath = path.resolve(__dirname, '../../src/game-rules/index.js');
+  let mapContent = fs.readFileSync(mapPath, 'utf-8');
+
+  const importLine = `import * as G${slug} from './game-rules-${slug}/index.ts';\n`;
+  if (!mapContent.includes(importLine)) {
+    mapContent = importLine + mapContent;
+  }
+
+  const newMapLine =
+    `__GAME_DETAIL_MAP.set(${gameId}, G${slug}.${variableName});__`.replace(
+      /__(.*?)__/g,
+      (_, expr) => expr
+    ) + '\n';
+  mapContent += newMapLine;
+
+  fs.writeFileSync(mapPath, mapContent, 'utf-8');
+}
+
+export function saveLLMOutputToFile({ gameId, gameName }) {
+  console.log(`SAVE FILE START :${gameName}`);
+
+  appendToJsArrayFile({ gameId, gameName });
+  const { outDir, variableName, fileName, slug } = saveAsTsExport({
+    gameId,
+    gameName,
+  });
+  saveMapAndIndexing({
+    outDir,
+    variableName,
+    fileName,
+    slug,
+    gameId,
   });
 }
-main();
+saveLLMOutputToFile({ gameId: 33, gameName: 'rummikube' });
