@@ -77,6 +77,13 @@ main {
   margin-right: 4px;
   border-right: 1px solid var(--gray400);
   padding-right: 6px;
+  cursor: pointer;
+}
+#footer_links span:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+  cursor: default;
 }
 
 #footer_copy {
