@@ -1,6 +1,6 @@
 import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
+import { filteredGames } from '../features/filter/filter.js';
 import { renderGameDetailRoute } from '../pages/index.ts';
-import { filteredGames } from '../search/search.js';
 import renderPagination from './pagination.ts';
 
 export function renderGameList(currentPage = 1, player, difficulty) {
@@ -13,6 +13,8 @@ export function renderGameList(currentPage = 1, player, difficulty) {
   const selectedPlayer = player || playerFilter?.value || 'all';
   const selectedDifficulty = difficulty || difficultyFilter?.value || 'all';
 
+  console.log('Selected Player:', selectedPlayer);
+  console.log('Selected Difficulty:', selectedDifficulty);
   const gameList = filteredGames(selectedPlayer, selectedDifficulty);
 
   /**서치파람스 업데이트 , pushState */

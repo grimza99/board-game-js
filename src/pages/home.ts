@@ -1,7 +1,7 @@
 import PATH from '../constants/path.ts';
+import { handleSearchInputGame } from '../features/search/search.js';
 import { renderGameList } from '../game-list/game-list.js';
 import showModal from '../modal/modal.ts';
-import { handleSearchInputGame } from '../search/search.js';
 
 export function renderHomeRoute(
   pushHistory = true,
