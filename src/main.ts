@@ -8,6 +8,10 @@ import { renderGameDetailRoute } from './pages/game-detail.js';
 import PATH from './constants/path.js';
 import { restoreFilterValues } from './features/filter/restoreFilterValues.js';
 import './styles/index.ts';
+import {
+  TDifficultyFilterOption,
+  TPlayerFilterOption,
+} from './shared/types/game-type.ts';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderHomeRoute(true, 1); // 초기 페이지 로드 시 1페이지 렌더링
@@ -51,8 +55,10 @@ function setupHistoryEventListeners() {
     switch (path) {
       case PATH.HOME:
         const pageParam = searchParams.get('page');
-        const player = searchParams.get('player') || 'all';
-        const difficulty = searchParams.get('difficulty') || 'all';
+        const player = (searchParams.get('player') ||
+          'all') as TPlayerFilterOption;
+        const difficulty = (searchParams.get('difficulty') ||
+          'all') as TDifficultyFilterOption;
         const page = pageParam ? parseInt(pageParam) : 1;
         renderHomeRoute(false, page, player, difficulty);
         restoreFilterValues(player, difficulty);

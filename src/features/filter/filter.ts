@@ -1,12 +1,22 @@
 import GAME_LIST from '../../game-list/game-list-Item';
+import {
+  TDifficultyFilterOption,
+  TGameDifficulty,
+  TGameDifficultyToEng,
+  TPlayerFilterOption,
+} from '../../shared/types/game-type';
 
-const DIFFICULTY_MAP = {
+const DIFFICULTY_MAP: Record<TGameDifficultyToEng, TGameDifficulty> = {
   hard: '어려움',
   normal: '중간',
   easy: '쉬움',
 };
+
 /**--------------플레이어수 & 난이도 필터링---------------*/
-export function filteredGames(selectedPlayer, selectedDifficulty) {
+export function filteredGames(
+  selectedPlayer: TPlayerFilterOption,
+  selectedDifficulty: TDifficultyFilterOption
+) {
   let filteredGames = [];
 
   if (selectedPlayer === 'all') {

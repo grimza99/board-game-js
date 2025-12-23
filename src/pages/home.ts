@@ -1,13 +1,17 @@
 import PATH from '../constants/path.ts';
-import { handleSearchInputGame } from '../features/search/search.js';
-import { renderGameList } from '../game-list/game-list.js';
+import { handleSearchInputGame } from '../features/search/search.ts';
+import { renderGameList } from '../game-list/game-list.ts';
 import showModal from '../modal/modal.ts';
+import {
+  TDifficultyFilterOption,
+  TPlayerFilterOption,
+} from '../shared/types/game-type.ts';
 
 export function renderHomeRoute(
   pushHistory = true,
   page: number = 1,
-  player: string | null = null,
-  difficulty: string | null = null
+  player?: TPlayerFilterOption,
+  difficulty?: TDifficultyFilterOption
 ) {
   if (pushHistory) {
     window.history.pushState({ page: page }, '', `${PATH.HOME}?page=${page}`);

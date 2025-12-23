@@ -1,4 +1,6 @@
-export const GAME_LIST = [
+import { IGame } from '../shared/types/game-type';
+
+export const GAME_LIST: IGame[] = [
   {
     id: 1,
     name: '카탄의 개척자들 (Catan)',
@@ -51,7 +53,7 @@ export const GAME_LIST = [
     id: 6,
     name: '아줄 (Azul)',
     players: '2-4',
-    playtime: '40',
+    playtime: 40,
     difficulty: '쉬움',
     image: 'public/game-image/main/6-Azul.jpeg',
     description:
@@ -61,7 +63,7 @@ export const GAME_LIST = [
     id: 7,
     name: '스컬 (skull)',
     players: '3-6',
-    playtime: '30',
+    playtime: 30,
     difficulty: '쉬움',
     image: 'public/game-image/main/7-skull.jpeg',
     description:
@@ -71,7 +73,7 @@ export const GAME_LIST = [
     id: 8,
     name: '팬데믹 (Pandemic)',
     players: '2-4',
-    playtime: '50',
+    playtime: 50,
     difficulty: '어려움',
     image: 'public/game-image/main/8-pandemic.jpeg',
     description:
@@ -81,7 +83,7 @@ export const GAME_LIST = [
     id: 9,
     name: '라스베가스 (Las Vegas)',
     players: '2-5',
-    playtime: '30',
+    playtime: 30,
     difficulty: '쉬움',
     image: 'public/game-image/main/9-Las.Vegas.jpeg',
     description:
@@ -91,7 +93,7 @@ export const GAME_LIST = [
     id: 10,
     name: '코드네임 (Codenames)',
     players: '4-8',
-    playtime: '20',
+    playtime: 20,
     difficulty: '중간',
     image: 'public/game-image/main/10-Codenames.jpeg',
     description:
@@ -101,7 +103,7 @@ export const GAME_LIST = [
     id: 11,
     name: '보난자 (Bohnanza)',
     players: '3-7',
-    playtime: '45',
+    playtime: 45,
     difficulty: '중간',
     image: 'public/game-image/main/11-Bohnanza.jpeg',
     description:
@@ -111,7 +113,7 @@ export const GAME_LIST = [
     id: 12,
     name: '러브레터 (Love Letter)',
     players: '2-4',
-    playtime: '20',
+    playtime: 20,
     difficulty: '쉬움',
     image: 'public/game-image/main/12-Love.Letter.jpeg',
     description:
@@ -121,7 +123,7 @@ export const GAME_LIST = [
     id: 13,
     name: '도블 (Dobble / Spot It!)',
     players: '2-8',
-    playtime: '15',
+    playtime: 15,
     difficulty: '쉬움',
     image: 'public/game-image/main/13-Dobble.jpeg',
     description:
@@ -131,7 +133,7 @@ export const GAME_LIST = [
     id: 14,
     name: '딕싯 (Dixit)',
     players: '3-6',
-    playtime: '30',
+    playtime: 30,
     difficulty: '쉬움',
     image: 'public/game-image/main/14-Dixit.jpeg',
     description:
@@ -141,7 +143,7 @@ export const GAME_LIST = [
     id: 15,
     name: '테라포밍 마스 (Terraforming Mars)',
     players: '1-5',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/15-Terraforming-Mars.jpeg',
     description:
@@ -151,7 +153,7 @@ export const GAME_LIST = [
     id: 16,
     name: '킹도미노 (Kingdomino)',
     players: '2-4',
-    playtime: '15-20',
+    playtime: 20,
     difficulty: '쉬움',
     image: 'public/game-image/main/16-Kingdomino.jpeg',
     description:
@@ -161,7 +163,7 @@ export const GAME_LIST = [
     id: 17,
     name: "위너스 서클 (Winner's Circle)",
     players: '2-6',
-    playtime: '30-45',
+    playtime: 30,
     difficulty: '중간',
     image: 'public/game-image/main/17-winners-circle.jpeg',
     description:
@@ -171,7 +173,7 @@ export const GAME_LIST = [
     id: 18,
     name: '도미니언 (Dominion)',
     players: '2-4',
-    playtime: '30',
+    playtime: 30,
     difficulty: '중간',
     image: 'public/game-image/main/18-Dominion.jpeg',
     description:
@@ -181,7 +183,7 @@ export const GAME_LIST = [
     id: 19,
     name: '사이쓰 (Scythe)',
     players: '1-5',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/19-Scythe.jpeg',
     description:
@@ -191,7 +193,7 @@ export const GAME_LIST = [
     id: 20,
     name: '퀵스 (Qwixx)',
     players: '2-5',
-    playtime: '15',
+    playtime: 15,
     difficulty: '쉬움',
     image: 'public/game-image/main/20-qwixx.jpeg',
     description:
@@ -201,7 +203,7 @@ export const GAME_LIST = [
     id: 21,
     name: '디크립토 (Decrypto)',
     players: '4-8',
-    playtime: '45',
+    playtime: 45,
     difficulty: '어려움',
     image: 'public/game-image/main/21-decrypto.jpeg',
     description:
@@ -211,7 +213,7 @@ export const GAME_LIST = [
     id: 22,
     name: '센추리: 향신료의 길 (Century: Spice Road)',
     players: '2-5',
-    playtime: '40',
+    playtime: 40,
     difficulty: '중간',
     image: 'public/game-image/main/22-Century-Spice-Road.jpeg',
     description:
@@ -221,7 +223,7 @@ export const GAME_LIST = [
     id: 23,
     name: '레지스탕스 아발론 (The Resistance Avalon)',
     players: '5-10',
-    playtime: '30',
+    playtime: 30,
     difficulty: '중간',
     image: 'public/game-image/main/23-Resistance-Avalon.jpeg',
     description:
@@ -231,7 +233,7 @@ export const GAME_LIST = [
     id: 24,
     name: '스플렌더 듀얼 (Splendor Duel)',
     players: '2',
-    playtime: '30',
+    playtime: 30,
     difficulty: '중간',
     image: 'public/game-image/main/24-splendor-duel.jpeg',
     description:
@@ -241,7 +243,7 @@ export const GAME_LIST = [
     id: 25,
     name: '글룸헤이븐 (Gloomhaven)',
     players: '1-4',
-    playtime: '120-180',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/25-Gloomhaven.jpeg',
     description:
@@ -251,7 +253,7 @@ export const GAME_LIST = [
     id: 26,
     name: '쓰루 디 에이지스: 문명에 관한 새로운 이야기 (Through the Ages: A New Story of Civilization)',
     players: '4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/26-Through-the-Ages.jpeg',
     description:
@@ -261,7 +263,7 @@ export const GAME_LIST = [
     id: 27,
     name: '가이아 프로젝트 (Gaia Project)',
     players: '1-4',
-    playtime: '150',
+    playtime: 150,
     difficulty: '어려움',
     image: 'public/game-image/main/27-GaiaProject.jpeg',
     description:
@@ -271,7 +273,7 @@ export const GAME_LIST = [
     id: 28,
     name: '버라지 (Barrage)',
     players: '2-4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/28-Barrage.jpeg',
     description:
@@ -281,7 +283,7 @@ export const GAME_LIST = [
     id: 29,
     name: '7 원더스 대결 (7 Wonders Duel)',
     players: '2',
-    playtime: '30',
+    playtime: 30,
     difficulty: '중간',
     image: 'public/game-image/main/29-7WondersDuel.jpeg',
     description:
@@ -291,7 +293,7 @@ export const GAME_LIST = [
     id: 30,
     name: '버건디의 성들 (The Castles of Burgundy)',
     players: '2-4',
-    playtime: '60',
+    playtime: 60,
     difficulty: '중간',
     image: 'public/game-image/main/30-TheCastlesofBurgundy.jpeg',
     description:
@@ -301,7 +303,7 @@ export const GAME_LIST = [
     id: 31,
     name: '푸에르토리코 (Puerto Rico)',
     players: '3-5',
-    playtime: '90',
+    playtime: 90,
     difficulty: '중간',
     image: 'public/game-image/main/31-PuertoRico.jpeg',
     description:
@@ -311,7 +313,7 @@ export const GAME_LIST = [
     id: 32,
     name: '칸반 EV (Kanban EV)',
     players: '1-4',
-    playtime: '150',
+    playtime: 150,
     difficulty: '어려움',
     image: 'public/game-image/main/32-KanbanEV.jpeg',
     description:
@@ -321,7 +323,7 @@ export const GAME_LIST = [
     id: 33,
     name: '황혼의 투쟁 (Twilight Struggle)',
     players: '2',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/33-TwilightStruggle.jpeg',
     description:
@@ -331,7 +333,7 @@ export const GAME_LIST = [
     id: 34,
     name: '아크 노바 (Ark Nova)',
     players: '1-3',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/34-ArkNova.jpeg',
     description:
@@ -341,7 +343,7 @@ export const GAME_LIST = [
     id: 35,
     name: '루트 (Root)',
     players: '2-4',
-    playtime: '90',
+    playtime: 90,
     difficulty: '어려움',
     image: 'public/game-image/main/35-Root.jpeg',
     description:
@@ -351,7 +353,7 @@ export const GAME_LIST = [
     id: 36,
     name: '윙스팬 (Wingspan)',
     players: '2-5',
-    playtime: '60',
+    playtime: 60,
     difficulty: '중간',
     image: 'public/game-image/main/36-Wingspan.jpeg',
     description:
@@ -361,7 +363,7 @@ export const GAME_LIST = [
     id: 37,
     name: '에버델 (Everdell)',
     players: '1-4',
-    playtime: '60',
+    playtime: 60,
     difficulty: '어려움',
     image: 'public/game-image/main/37-Everdell.jpeg',
     description:
@@ -371,7 +373,7 @@ export const GAME_LIST = [
     id: 38,
     name: '브라스: 버밍엄 (Brass: Birmingham)',
     players: '2-4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/38-Brass-Birmingham.jpeg',
     description:
@@ -381,7 +383,7 @@ export const GAME_LIST = [
     id: 39,
     name: '그레이트 웨스턴 트레일 (Great Western Trail)',
     players: '2-4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/39-GreatWesternTrail.jpeg',
     description:
@@ -391,7 +393,7 @@ export const GAME_LIST = [
     id: 40,
     name: '스피릿 아일랜드 (Spirit Island)',
     players: '2-4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/40-SpiritIsland.jpeg',
     description:
@@ -401,7 +403,7 @@ export const GAME_LIST = [
     id: 41,
     name: '아그리콜라 (Agricola)',
     players: '5+',
-    playtime: '120',
+    playtime: 120,
     difficulty: '중간',
     image: 'public/game-image/main/41-Agricola.jpeg',
     description:
@@ -411,7 +413,7 @@ export const GAME_LIST = [
     id: 42,
     name: '콘코디아 (Concordia)',
     players: '5+',
-    playtime: '120',
+    playtime: 120,
     difficulty: '중간',
     image: 'public/game-image/main/42-Concordia.jpeg',
     description:
@@ -421,7 +423,7 @@ export const GAME_LIST = [
     id: 43,
     name: '더 크루: 딥 시 미션 (The Crew: Mission Deep Sea)',
     players: '5+',
-    playtime: '30',
+    playtime: 30,
     difficulty: '쉬움',
     image: 'public/game-image/main/43-TheCrew-MissionDeepSea.jpeg',
     description:
@@ -431,7 +433,7 @@ export const GAME_LIST = [
     id: 44,
     name: '클랭크! (Clank!)',
     players: '2-4',
-    playtime: '60',
+    playtime: 60,
     difficulty: '중간',
     image: 'public/game-image/main/44-Clank.jpeg',
     description:
@@ -441,7 +443,7 @@ export const GAME_LIST = [
     id: 45,
     name: '로스트 루인즈 오브 아르낙 (Lost Ruins of Arnak)',
     players: '1-4',
-    playtime: '90',
+    playtime: 90,
     difficulty: '중간',
     image: 'public/game-image/main/45-LostRuinsOfArnak.jpeg',
     description: '탐험·덱빌딩·자원 관리가 결합된 고대 유적 탐험 게임입니다',
@@ -450,7 +452,7 @@ export const GAME_LIST = [
     id: 46,
     name: '카스카디아 (Cascadia)',
     players: '1-4',
-    playtime: '30',
+    playtime: 30,
     difficulty: '쉬움',
     image: 'public/game-image/main/46-Cascadia.jpeg',
     description:
@@ -460,7 +462,7 @@ export const GAME_LIST = [
     id: 47,
     name: '히트: 페달 투 더 메탈 (Heat: Pedal to the Metal)',
     players: '5+',
-    playtime: '45',
+    playtime: 45,
     difficulty: '쉬움',
     image: 'public/game-image/main/47-HeatPedalToTheMetal.jpeg',
     description:
@@ -470,7 +472,7 @@ export const GAME_LIST = [
     id: 48,
     name: '아일 오브 캣츠 (The Isle of Cats)',
     players: '2-4',
-    playtime: '60',
+    playtime: 60,
     difficulty: '쉬움',
     image: 'public/game-image/main/48-TheIsleOfCats.jpeg',
     description:
@@ -480,7 +482,7 @@ export const GAME_LIST = [
     id: 49,
     name: '비티컬처 (Viticulture)',
     players: '5+',
-    playtime: '90',
+    playtime: 90,
     difficulty: '중간',
     image: 'public/game-image/main/49-Viticulture.jpeg',
     description:
@@ -490,7 +492,7 @@ export const GAME_LIST = [
     id: 50,
     name: '파워 그리드 (Power Grid)',
     players: '5+',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/50-PowerGrid.jpeg',
     description:
@@ -500,7 +502,7 @@ export const GAME_LIST = [
     id: 51,
     name: '하드리안의 장벽 (Hadrian’s Wall)',
     players: '2-4',
-    playtime: '60',
+    playtime: 60,
     difficulty: '어려움',
     image: 'public/game-image/main/51-HadriansWall.jpeg',
     description:
@@ -510,7 +512,7 @@ export const GAME_LIST = [
     id: 52,
     name: '웨스트킹덤의 팔라딘 (Paladins of the West Kingdom)',
     players: '2-4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/52-PaladinsOfTheWestKingdom.jpeg',
     description:
@@ -520,7 +522,7 @@ export const GAME_LIST = [
     id: 53,
     name: '리스보아 (Lisboa)',
     players: '2-4',
-    playtime: '150',
+    playtime: 150,
     difficulty: '어려움',
     image: 'public/game-image/main/53-Lisboa.jpeg',
     description:
@@ -530,7 +532,7 @@ export const GAME_LIST = [
     id: 54,
     name: '마라카이보 (Maracaibo)',
     players: '2-4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/54-Maracaibo.jpeg',
     description:
@@ -540,7 +542,7 @@ export const GAME_LIST = [
     id: 55,
     name: '스카이팀 (Sky Team)',
     players: '2',
-    playtime: '20',
+    playtime: 20,
     difficulty: '중간',
     image: 'public/game-image/main/55-SkyTeam.jpeg',
     description:
@@ -550,7 +552,7 @@ export const GAME_LIST = [
     id: 56,
     name: '스시 고 파티 (Sushi Go Party!)',
     players: '2-7',
-    playtime: '20',
+    playtime: 20,
     difficulty: '쉬움',
     image: 'public/game-image/main/56-SushiGoParty.jpeg',
     description:
@@ -560,7 +562,7 @@ export const GAME_LIST = [
     id: 57,
     name: '카르카손 (Carcassonne)',
     players: '2-5',
-    playtime: '40',
+    playtime: 40,
     difficulty: '쉬움',
     image: 'public/game-image/main/57-Carcassonne.jpeg',
     description:
@@ -570,7 +572,7 @@ export const GAME_LIST = [
     id: 58,
     name: '스톤에이지 (Stone Age)',
     players: '2-4',
-    playtime: '60',
+    playtime: 60,
     difficulty: '중간',
     image: 'public/game-image/main/58-StoneAge.jpeg',
     description:
@@ -580,7 +582,7 @@ export const GAME_LIST = [
     id: 59,
     name: '레일로드 잉크 (Railroad Ink)',
     players: '2-6',
-    playtime: '30',
+    playtime: 30,
     difficulty: '쉬움',
     image: 'public/game-image/main/59-RailroadInk.jpeg',
     description: '주사위로 도로와 철도를 연결하는 롤앤라이트 퍼즐 게임입니다',
@@ -589,7 +591,7 @@ export const GAME_LIST = [
     id: 60,
     name: '서머너 워즈 (Summoner Wars)',
     players: '2',
-    playtime: '40',
+    playtime: 40,
     difficulty: '중간',
     image: 'public/game-image/main/60-SummonerWars.jpeg',
     description:
@@ -599,7 +601,7 @@ export const GAME_LIST = [
     id: 61,
     name: '패치워크 (Patchwork)',
     players: '2',
-    playtime: '30',
+    playtime: 30,
     difficulty: '쉬움',
     image: 'public/game-image/main/61-Patchwork.jpeg',
     description: '두 명이 천 조각을 사서 개인 보드에 배치하는 퍼즐 게임입니다',
@@ -608,7 +610,7 @@ export const GAME_LIST = [
     id: 62,
     name: '오딘을 위하여 (A Feast for Odin)',
     players: '1-4',
-    playtime: '150',
+    playtime: 150,
     difficulty: '어려움',
     image: 'public/game-image/main/62-AFeastForOdin.jpeg',
     description:
@@ -618,7 +620,7 @@ export const GAME_LIST = [
     id: 63,
     name: '블러드 레이지 (Blood Rage)',
     players: '2-4',
-    playtime: '90',
+    playtime: 90,
     difficulty: '중간',
     image: 'public/game-image/main/63-BloodRage.jpeg',
     description: '북유럽 신화를 배경으로 한 전투 중심 영역 장악 게임입니다',
@@ -627,7 +629,7 @@ export const GAME_LIST = [
     id: 64,
     name: '트라야누스 (Trajan)',
     players: '2-4',
-    playtime: '120',
+    playtime: 120,
     difficulty: '어려움',
     image: 'public/game-image/main/64-Trajan.jpeg',
     description: '만칼라 시스템을 활용한 다중 미니게임 전략 유로 게임입니다',

@@ -1,20 +1,35 @@
 import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
-import { filteredGames } from '../features/filter/filter.js';
+import { filteredGames } from '../features/filter/filter.ts';
 import { renderGameDetailRoute } from '../pages/index.ts';
+import {
+  IGame,
+  TDifficultyFilterOption,
+  TPlayerFilterOption,
+} from '../shared/types/game-type.ts';
 import renderPagination from './pagination.ts';
 
-export function renderGameList(currentPage = 1, player, difficulty) {
-  const playerFilter = document.getElementById('player-filter-options');
-  const difficultyFilter = document.getElementById('difficulty-filter-options');
+export function renderGameList(
+  currentPage = 1,
+  player?: TPlayerFilterOption,
+  difficulty?: TDifficultyFilterOption
+) {
+  const playerFilter = document.getElementById(
+    'player-filter-options'
+  ) as HTMLSelectElement;
+  const difficultyFilter = document.getElementById(
+    'difficulty-filter-options'
+  ) as HTMLSelectElement;
   const gameListElement = document.getElementById('game_list');
 
   if (!playerFilter && !difficultyFilter) return;
 
-  const selectedPlayer = player || playerFilter?.value || 'all';
-  const selectedDifficulty = difficulty || difficultyFilter?.value || 'all';
+  const selectedPlayer = (player ||
+    playerFilter?.value ||
+    'all') as TPlayerFilterOption;
+  const selectedDifficulty = (difficulty ||
+    difficultyFilter?.value ||
+    'all') as TDifficultyFilterOption;
 
-  console.log('Selected Player:', selectedPlayer);
-  console.log('Selected Difficulty:', selectedDifficulty);
   const gameList = filteredGames(selectedPlayer, selectedDifficulty);
 
   /**서치파람스 업데이트 , pushState */
@@ -50,7 +65,7 @@ export function renderGameList(currentPage = 1, player, difficulty) {
   );
 }
 
-export function createGameCard(game) {
+export function createGameCard(game: IGame): HTMLButtonElement {
   const card = document.createElement('button');
   card.className = 'game_card';
   card.innerHTML = `
