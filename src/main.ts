@@ -7,6 +7,7 @@ import {
 import { renderGameDetailRoute } from './pages/game-detail.js';
 import PATH from './constants/path.js';
 import { restoreFilterValues } from './features/filter/restoreFilterValues.js';
+import './styles/index.ts';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderHomeRoute(true, 1); // 초기 페이지 로드 시 1페이지 렌더링
