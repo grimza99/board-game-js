@@ -1,5 +1,5 @@
 import PATH from '../constants/path.ts';
-import { handleSearchInputGame } from '../features/search/search.js';
+import { handleSearchInputGame } from '../features/search/search.ts';
 import { renderGameList } from '../game-list/game-list.js';
 import showModal from '../modal/modal.ts';
 

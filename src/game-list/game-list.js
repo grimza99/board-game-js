@@ -1,5 +1,5 @@
 import { GAMES_LIST_PAGE_SIZE } from '../constants/pagination.ts';
-import { filteredGames } from '../features/filter/filter.js';
+import { filteredGames } from '../features/filter/filter.ts';
 import { renderGameDetailRoute } from '../pages/index.ts';
 import renderPagination from './pagination.ts';
 
