@@ -96,6 +96,9 @@ export function renderHomeRoute(
         handleSearchInputGame();
       }
     });
+    searchInput.addEventListener('blur', function () {
+      handleSearchInputGame({ isBlur: true });
+    });
   }
   const playerFilter = document.getElementById('player-filter');
   if (playerFilter) {

@@ -12,14 +12,15 @@ function createSearchResultItem(game: IGame): HTMLLIElement {
   <img src="${game.image}" alt="${game.name}" class="game-image"/>
   `;
   //클릭시 상세 페이지로 이동
-  li.addEventListener('click', () => {
+  li.addEventListener('mousedown', (e) => {
+    e.preventDefault();
     renderGameDetailRoute(game.id);
   });
   return li;
 }
 
 /**인풋 검색 연산 */
-export function handleSearchInputGame() {
+export function handleSearchInputGame({ isBlur }: { isBlur?: boolean } = {}) {
   const searchInput = document.getElementById(
     'game_search_input'
   ) as HTMLInputElement;
@@ -29,6 +30,10 @@ export function handleSearchInputGame() {
 
   const searchTerm = searchInput.value.trim().toLowerCase();
 
+  if (isBlur) {
+    searchResults.innerHTML = '';
+    return;
+  }
   searchResults.innerHTML = "<ul id='search_results_ul'></ul>";
   const searchResultsUl = document.getElementById('search_results_ul');
 
