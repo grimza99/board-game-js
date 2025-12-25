@@ -52,7 +52,7 @@
   position: absolute;
   left: 20px;
   font-size: 24px;
-  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* 서브타이틀 (게임설명, 게임 규칙, 게임 룰 영상) */
@@ -137,7 +137,7 @@
     top: 70%;
   }
   .detail-game-info-card {
-    padding: 16px 32px;
+    padding: 16px 60px;
   }
   .info-card-icon {
     width: 80px;

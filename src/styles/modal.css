@@ -20,11 +20,11 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid var(--primary);
   color: white;
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 8px 12px;
   background-color: var(--primary);
   display: flex;
   gap: 8px;
@@ -75,10 +75,28 @@
 }
 
 /* -------------------------------------------- */
+/*테블릿*/
+@media (min-width: 768px) {
+  #request_game_button {
+    font-size: 16px;
+  }
+  #request_edit_rule_button {
+    bottom: 40px;
+    font-size: 18px;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+}
+
+/* -------------------------------------------- */
 /*데스크탑*/
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   #modal_container {
     padding: 20px;
+  }
+  #request_edit_rule_button {
+    right: 60px;
+    padding: 10px 20px;
   }
 }
 /* -------------------------------------------- */

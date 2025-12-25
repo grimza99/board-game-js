@@ -39,6 +39,12 @@
 
 .game_name {
   font-size: 18px;
+  text-align: left;
+  margin: 10px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
 }
 .description {
   font-size: 14px;
@@ -60,14 +66,36 @@
     height: 100px;
   }
 }
-/* 대형 데스크탑 */
+/* 데스크탑 */
 @media (min-width: 1024px) {
   #game_list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .game_image {
     width: 120px;
     height: 120px;
+  }
+  .game_name {
+    font-size: 20px;
+    margin: 20px 0px;
+    width: 300px;
+  }
+}
+/* 대형 데스크탑 */
+@media (min-width: 1440px) {
+  #game_list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+  }
+  .game_image {
+    width: 140px;
+    height: 140px;
+  }
+  .game_name {
+    font-size: 20px;
+    margin: 20px 0px;
+    width: 200px;
   }
 }
