@@ -1,3 +1,4 @@
+/* mobile-first */
 #game_list {
   display: flex;
   flex-direction: column;
@@ -57,12 +58,10 @@
   .game_image {
     width: 100px;
     height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
   }
 }
 /* 대형 데스크탑 */
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #game_list {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -70,7 +69,5 @@
   .game_image {
     width: 120px;
     height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
   }
 }
