@@ -6,21 +6,49 @@
   --text: #2d3436;
   --text-secondary: #707678;
 }
+@layer reset, base;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-  background-color: var(--background);
-  color: var(--text);
-  box-sizing: border-box;
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-button {
-  cursor: pointer;
-  background-color: white;
-  border: none;
+@layer base {
+  html {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  main {
+    padding: 20px;
+    min-height: calc(100vh - 70px - 60px); /* header와 footer 높이 제외 */
+  }
+}
+
+@layer components {
+  button {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+  }
 }
 
 #header {
@@ -34,10 +62,6 @@ button {
 #header_title {
   cursor: pointer;
   color: white;
-}
-main {
-  padding: 20px;
-  min-height: calc(100vh - 70px - 60px); /* header와 footer 높이 제외 */
 }
 
 #my-game-button {
