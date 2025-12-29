@@ -12,7 +12,7 @@ function buildNormalizedJson({ gameId, gameName, url }) {
     gameName,
     source: {
       url,
-      videoEmbedded,
+      videoEmbedded: videoEmbedded || null,
       type: 'rule-page',
     },
     content: {

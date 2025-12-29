@@ -34,7 +34,7 @@ async function runProcess() {
       gameId: Number(gameId),
       gameName,
       url,
-      videoUrl,
+      videoUrl: videoUrl || null,
     };
 
     console.log(

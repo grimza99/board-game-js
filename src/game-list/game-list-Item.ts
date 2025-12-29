@@ -736,6 +736,46 @@ export const GAME_LIST: IGame[] = [
     description:
       '두 상인이 인도 시장에서 상품을 사고팔며 최고의 상인이 되기 위해 경쟁하는 카드 교환 및 세트 수집 전략 게임입니다.',
   },
+  {
+    id: 75,
+    name: '카베르나: 동굴 농부들 (Caverna: The Cave Farmers)',
+    players: '1-7',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/75-caverna-the-cave-farmers.jpeg',
+    description:
+      '모험심 강한 드워프가 되어 동굴을 개척하고 농사와 채굴, 무기 제작을 통해 가족을 부양하며 부를 쌓는 전략 게임입니다.',
+  },
+  {
+    id: 76,
+    name: '팍스 파미르: 세컨드 에디션 (Pax Pamir: Second Edition)',
+    players: '2-5',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/76-pax-pamir-second-edition.jpeg',
+    description:
+      '19세기 아프가니스탄의 정치적 혼란을 배경으로, 충성도와 세력 확장을 통해 영향력을 키우는 전략적 카드 게임입니다.',
+  },
+  {
+    id: 77,
+    name: '더 갤러리스트 (The Gallerist)',
+    players: '1-4',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/77-the-gallerist.jpeg',
+    description:
+      '예술가를 육성하고 작품을 사고 팔며 국제적인 영향력을 키워 최고의 갤러리를 운영하는 전략 게임입니다.',
+  },
+  {
+    id: 78,
+    name: '언더워터 시티즈 (Underwater Cities)',
+    players: '1-4',
+    playtime: 120,
+    difficulty: '어려움',
+    image: '/public/game-image/crawl-images/78-underwater-cities.jpeg',
+    description:
+      '플레이어들이 해저 도시를 건설하고, 도시를 연결하는 터널과 다양한 시설을 건설하며 자원을 관리하는 전략 게임입니다. 카드와 행동 선택을 통해 네트워크를 확장하고 생산 단계를 거쳐 점수를 획득합니다.',
+  },
 ];
 
 export default GAME_LIST;
