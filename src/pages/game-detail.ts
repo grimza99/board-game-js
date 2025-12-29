@@ -52,15 +52,8 @@ export function renderGameDetailRoute(gameId: number, pushHistory = true) {
         <h3 class='detail-game-subtitle'>게임 규칙</h3>
         <article id="game-rule">${rule}</article>
       </div>
-      <hr class='hr'></hr>
-      <div id="game-video-section">
-        <h3 class='detail-game-subtitle'>게임 룰 영상</h3>
-        <iframe 
-          id="detail-game-video"
-          src="https://www.youtube.com/embed/${video}" 
-          frameborder="0" 
-          allowfullscreen>
-        </iframe>
+      <div id="game-video-container">
+        
       </div>
     </section>
     <button id="request_edit_rule_button">
@@ -72,6 +65,25 @@ export function renderGameDetailRoute(gameId: number, pushHistory = true) {
         <span>룰 수정 요청</span>
     </button>
   `;
+
+  if (video) {
+    const videoContainer = document.getElementById('game-video-container');
+    if (videoContainer) {
+      const videoHtml = String.raw;
+      videoContainer.innerHTML = videoHtml`
+        <hr class='hr'></hr>
+        <div id="game-video-section">
+          <h3 class='detail-game-subtitle'>게임 룰 영상</h3>
+          <iframe 
+            id="detail-game-video"
+            src="https://www.youtube.com/embed/${video}" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
+    }
+  }
   const backButton = document.getElementById('to_go_game_list_btn');
   backButton!.onclick = () => {
     window.history.back();
