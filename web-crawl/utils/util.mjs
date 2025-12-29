@@ -36,7 +36,7 @@ function readRawText(gameId, gameName, isEmbedded = false) {
   const fileName = toFileName(gameId, gameName, isEmbedded);
   const filePath = path.resolve(DIR.CRAWL_RAWS, fileName + '.txt');
   if (!fs.existsSync(filePath)) {
-    throw new Error(`raw text 파일이 없습니다.- ${filePath}`);
+    return null;
   }
 
   return fs.readFileSync(filePath, 'utf-8');

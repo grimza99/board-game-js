@@ -82,7 +82,9 @@ export async function crawlAndSave({ gameId, gameName, url, videoUrl }) {
     pageUrl: url,
     src: img,
   });
-  saveEmbeddedStr({ videoUrl, gameId, gameName });
+  if (videoUrl) {
+    saveEmbeddedStr({ videoUrl, gameId, gameName });
+  }
 
   const fileName = toFileName(gameId, gameName);
   const filePath = path.join(rawDir, `${fileName}.txt`);
