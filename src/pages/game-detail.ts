@@ -1,9 +1,12 @@
 import PATH from '../constants/path.js';
 import { GAME_DETAIL_MAP } from '../game-rules/index.js';
 import showModal from '../modal/modal.js';
+import { renderAd } from '../shared/model/gtm/render-ad.js';
+import { sendGAPageView } from '../shared/model/gtm/render-ga-event.js';
 
 export function renderGameDetailRoute(gameId: number, pushHistory = true) {
   if (pushHistory) {
+    sendGAPageView(`game-detail?gameId=${gameId}`);
     const relativePath = `${PATH.GAME_DETAIL}?gameId=${gameId}`;
     window.history.pushState({ gameId: gameId }, '', relativePath);
   }
@@ -84,6 +87,11 @@ export function renderGameDetailRoute(gameId: number, pushHistory = true) {
       `;
     }
   }
+  const adContainer = document.createElement('div');
+  adContainer.className = 'ad-container';
+  main.appendChild(adContainer);
+  renderAd(adContainer);
+
   const backButton = document.getElementById('to_go_game_list_btn');
   backButton!.onclick = () => {
     window.history.back();
