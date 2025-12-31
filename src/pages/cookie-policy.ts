@@ -1,9 +1,11 @@
 import { EL_ID } from '../constants/el-id';
+import { sendGAPageView } from '../shared/model/gtm/render-ga-event';
 
 export function renderCookiePolicyRoute(pushHistory = true) {
   document.title = '쿠키 정책 | 보드게임위키';
 
   if (pushHistory) {
+    sendGAPageView('/cookie-policy');
     const path = `./cookie-policy`;
     window.history.pushState({}, '', path);
   }

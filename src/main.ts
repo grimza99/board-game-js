@@ -7,6 +7,7 @@ import {
 import { renderGameDetailRoute } from './pages/game-detail.js';
 import PATH from './constants/path.js';
 import { restoreFilterValues } from './features/filter/restoreFilterValues.js';
+import { sendGAPageView } from './shared/model/gtm/render-ga-event.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   renderHomeRoute(true, 1); // 초기 페이지 로드 시 1페이지 렌더링
@@ -47,6 +48,8 @@ function setupHistoryEventListeners() {
   window.addEventListener('popstate', function () {
     const path = window.location.pathname;
     const searchParams = new URLSearchParams(window.location.search);
+    sendGAPageView(path);
+
     switch (path) {
       case PATH.HOME:
         const pageParam = searchParams.get('page');
