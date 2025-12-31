@@ -1,4 +1,5 @@
 import { EL_ID } from '../constants/el-id';
+import { sendGAPageView } from '../shared/model/gtm/render-ga-event';
 
 export function renderTermsRoute(pushHistory = true) {
   document.title = '이용약관 | 보드게임위키';
@@ -6,6 +7,7 @@ export function renderTermsRoute(pushHistory = true) {
   if (!main) return;
 
   if (pushHistory) {
+    sendGAPageView('/privacy');
     const path = `./terms`;
     window.history.pushState({}, '', path);
   }

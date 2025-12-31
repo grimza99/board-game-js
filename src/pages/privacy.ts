@@ -1,4 +1,5 @@
 import { EL_ID } from '../constants/el-id';
+import { sendGAPageView } from '../shared/model/gtm/render-ga-event';
 
 export function renderPrivacyRoute(pushHistory = true) {
   document.title = '개인정보처리방침 | 보드게임위키';
@@ -6,6 +7,7 @@ export function renderPrivacyRoute(pushHistory = true) {
   if (!main) return;
 
   if (pushHistory) {
+    sendGAPageView('/privacy');
     const path = `./privacy`;
     window.history.pushState({}, '', path);
   }

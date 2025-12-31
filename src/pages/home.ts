@@ -6,6 +6,7 @@ import {
   TDifficultyFilterOption,
   TPlayerFilterOption,
 } from '../shared/types/game-type.ts';
+import { sendGAPageView } from '../shared/model/gtm/render-ga-event.js';
 
 export function renderHomeRoute(
   pushHistory = true,
@@ -15,6 +16,7 @@ export function renderHomeRoute(
 ) {
   if (pushHistory) {
     window.history.pushState({ page: page }, '', `${PATH.HOME}?page=${page}`);
+    sendGAPageView(PATH.HOME);
   }
   const main = document.getElementById('main-content');
 
